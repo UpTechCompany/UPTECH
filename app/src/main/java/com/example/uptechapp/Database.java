@@ -1,5 +1,7 @@
 package com.example.uptechapp;
 
+import android.os.Build;
+
 import com.google.android.gms.maps.model.LatLng;
 
 import java.util.ArrayList;
@@ -21,9 +23,9 @@ public class Database {
                         "someone",
                         "url",
                         "title " + String.valueOf(i),
-                        "description",
+                        "description " + String.valueOf(i),
                         new Date(2023, 01, 23),
-                        new LatLng(56, 56)
+                        new LatLng(56.130366 + (i), -106.346771 - (i))
                 ));
             }
 
@@ -34,4 +36,21 @@ public class Database {
         }
 
     }
+
+    public static EmergencyModel getEmergencyByTitle(String title) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            return EMERGENCIES_LIST.stream().filter(emergency -> emergency.getTitle().equals(title)).findAny()
+                    .orElseThrow(() -> new RuntimeException("not found"));
+        }
+        else {
+            for (EmergencyModel emergency:
+                    EMERGENCIES_LIST) {
+                if(emergency.getTitle().equals(title)) {
+                    return emergency;
+                }
+            }
+        }
+        return null;
+    }
+
 }
