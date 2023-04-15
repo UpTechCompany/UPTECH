@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">UptechApp</string>
+    <string name="account_logging">Logged</string>
+    <string name="default_web_client_id" translatable="false">527661477185-bcbv0l2ot1d95mhdigtb0lhs4ndjjilo.apps.googleusercontent.com</string>
+    <string name="progressBarLogging">Logging</string>
+    <string name="sign_in_with_google">Sign In With Google</string>
 </resources>
