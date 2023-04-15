@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -84,10 +85,25 @@ public class LoginActivity extends AppCompatActivity {
 
                         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
                         SharedPreferences.Editor editor = sharedPref.edit();
-                        editor.putBoolean(getString(R.string.account_logging), true);
+
+                        // get id from database
+
+                        UserModel user = new UserModel (
+                                -1,
+                                credential.getDisplayName(),
+                                credential.getId()
+                        );
+
+                        long id = 1L;
+
+                        editor.putLong(getString(R.string.id_logging), id);
                         editor.apply();
 
-                        Log.i(TAG, "BOOLEAN " + sharedPref.getBoolean(getString(R.string.account_logging), false));
+                        Log.i(TAG, "ID " + sharedPref.getLong(getString(R.string.id_logging), 0L));
+
+                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                        startActivity(intent);
+                        LoginActivity.this.finish();
 
                     } else {
                         Toast.makeText(this, "User not found", Toast.LENGTH_SHORT).show();

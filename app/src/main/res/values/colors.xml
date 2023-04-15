@@ -7,4 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="purple_figma">#8640BD</color>
+    <color name="gray_figma">#BABABA</color>
+    <color name="light_gray_figma">#BABABA</color>
+    <color name="dark_gray_figma">#1E1E1E</color>
+    <color name="medium_dark_gray_figma">#494949</color>
 </resources>

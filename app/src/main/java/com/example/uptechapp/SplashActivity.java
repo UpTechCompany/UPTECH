@@ -26,14 +26,21 @@ public class SplashActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
 
-            SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
-            boolean logged = sharedPref.getBoolean(getString(R.string.account_logging), false);
+            long id = 0L;
+            try {
+                SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+                id = sharedPref.getLong(getString(R.string.id_logging), 0L);
 
-            Log.i(TAG, "BOOLEAN " + sharedPref.getBoolean(getString(R.string.account_logging), false));
+
+                Log.i(TAG, "ID - " + sharedPref.getLong(getString(R.string.id_logging), 0L));
+
+            } catch (Exception e) {
+                Log.i(TAG, e.getMessage());
+            }
 
             Intent intent;
 
-            if (logged) {
+            if (id != 0) {
                 intent = new Intent(SplashActivity.this, MainActivity.class);
             } else {
                 intent = new Intent(SplashActivity.this, LoginActivity.class);
