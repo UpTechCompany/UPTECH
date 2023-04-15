@@ -4,4 +4,6 @@
     <string name="default_web_client_id" translatable="false">527661477185-bcbv0l2ot1d95mhdigtb0lhs4ndjjilo.apps.googleusercontent.com</string>
     <string name="progressBarLogging">Logging</string>
     <string name="sign_in_with_google">Sign In With Google</string>
+    <string name="verify_hint">Please, to verify your personality log in using:</string>
+    <string name="login_inf">*By clicking on the button, you agree to provide Your information is sent to the UpTech application for processing.</string>
 </resources>

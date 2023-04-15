@@ -3,27 +3,45 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray_figma">
+
+    <View
+        android:id="@+id/ellipse"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/ellipse"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <RelativeLayout
         android:id="@+id/signGoogle"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        android:layout_marginTop="48dp"
-        android:background="@drawable/round_corner_btn"
         android:layout_marginLeft="64dp"
+        android:layout_marginTop="436dp"
         android:layout_marginRight="64dp"
+        android:background="@drawable/round_corner_btn"
+        android:backgroundTint="@color/light_gray_figma"
+        android:clipToOutline="true"
+        android:gravity="center"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:gravity="center"
-        >
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/imageGoogle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
             android:padding="4dp"
             android:src="@drawable/ic_google_logo" />
 
@@ -32,12 +50,90 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="6dp"
-            android:text="@string/sign_in_with_google"
-            android:textColor="@color/white"
-            android:textSize="20sp"
+            android:layout_toEndOf="@id/imageGoogle"
             android:gravity="center"
-            android:layout_toEndOf="@id/imageGoogle"/>
+            android:text="@string/sign_in_with_google"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/signGosuslugi"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="524dp"
+        android:layout_marginRight="64dp"
+        android:background="@drawable/round_corner_btn"
+        android:backgroundTint="@color/light_gray_figma"
+        android:clipToOutline="true"
+        android:gravity="center"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_toEndOf="@id/imageGosuslugi"
+            android:gravity="center"
+            android:text="Sign In With Госуслуги"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageGosuslugi"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:padding="4dp"
+            android:src="@drawable/gosuslugi" />
 
     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="188dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="76dp"
+        android:gravity="center"
+        android:text="LOOKOUT"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="@+id/ellipse"
+        app:layout_constraintTop_toTopOf="@+id/ellipse"
+        android:textColor="@color/purple_figma"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="330dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="344dp"
+        android:gravity="center"
+        android:text="@string/verify_hint"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="280dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="584dp"
+        android:layout_marginEnd="64dp"
+        android:text="@string/login_inf"
+        android:textColor="@color/medium_dark_gray_figma"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
