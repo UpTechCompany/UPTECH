@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "929808681433",
+    "project_id": "lookout-4d6cd",
+    "storage_bucket": "lookout-4d6cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929808681433:android:16faeaf55d7dfde1c871c8",
+        "android_client_info": {
+          "package_name": "com.example.uptechapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "929808681433-uuhfoksimh3sqio1d7tj3km7ajfqvddi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0mDEqmSkBo2AzQIEeKi5u84BYFt7Og0A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "929808681433-uuhfoksimh3sqio1d7tj3km7ajfqvddi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
