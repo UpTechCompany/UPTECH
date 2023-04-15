@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -25,7 +26,7 @@ public class SplashActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
 
-            SharedPreferences sharedPref = this.getPreferences(Context.MODE_PRIVATE);
+            SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
             boolean logged = sharedPref.getBoolean(getString(R.string.account_logging), false);
 
             Log.i(TAG, "BOOLEAN " + sharedPref.getBoolean(getString(R.string.account_logging), false));

@@ -9,6 +9,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -81,7 +82,7 @@ public class LoginActivity extends AppCompatActivity {
                         Log.i(TAG, "DATA " + credential.getPhoneNumber());
                         Log.i(TAG, "DATA-NAME" + credential.getProfilePictureUri() + " " + credential.getGivenName() + " " + credential.getDisplayName());
 
-                        SharedPreferences sharedPref = this.getPreferences(Context.MODE_PRIVATE);
+                        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
                         SharedPreferences.Editor editor = sharedPref.edit();
                         editor.putBoolean(getString(R.string.account_logging), true);
                         editor.apply();
