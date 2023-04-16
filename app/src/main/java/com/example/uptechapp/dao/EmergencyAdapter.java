@@ -1,5 +1,6 @@
 package com.example.uptechapp.dao;
 
+import android.content.Context;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.uptechapp.R;
 import com.example.uptechapp.model.Emergency;
 
@@ -19,9 +21,11 @@ public class EmergencyAdapter extends RecyclerView.Adapter<EmergencyAdapter.View
 
     private List<Emergency> emergenciesList;
     static final String TAG = "AdapterEmergency";
+    private Context context;
 
-    public EmergencyAdapter(List<Emergency> emergenciesList) {
+    public EmergencyAdapter(List<Emergency> emergenciesList, Context context) {
         this.emergenciesList = emergenciesList;
+        this.context = context;
     }
 
     @NonNull
@@ -72,9 +76,9 @@ public class EmergencyAdapter extends RecyclerView.Adapter<EmergencyAdapter.View
             emergencyTitle.setText(title);
             emergencyDescription.setText(description);
             emergencyTime.setText(time.toString());
-            emergencyPhoto.setImageResource(R.drawable.ic_google_logo);
-
-            } catch (Exception e) {
+//            emergencyPhoto.setImageResource(R.drawable.ic_google_logo);
+            Glide.with(context).load(photo).into(emergencyPhoto);
+         } catch (Exception e) {
                 Log.i(TAG, e.getMessage());
             }
         }

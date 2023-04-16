@@ -6,6 +6,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentResolver;
 import android.content.Intent;
+import android.location.Address;
+import android.location.Geocoder;
+import android.location.Location;
+import android.location.LocationListener;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
@@ -19,6 +23,7 @@ import android.widget.Toast;
 
 import com.example.uptechapp.R;
 import com.example.uptechapp.api.EmergencyApiService;
+import com.example.uptechapp.api.ListenerLocation;
 import com.example.uptechapp.model.Emergency;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -27,7 +32,10 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
+import java.io.IOException;
 import java.util.Calendar;
+import java.util.List;
+import java.util.Locale;
 
 import okhttp3.ResponseBody;
 import retrofit2.Call;
@@ -55,6 +63,7 @@ public class CreateActivity extends AppCompatActivity {
 
     private void init() {
         BottomNavigationView nav = findViewById(R.id.bottomNavBar);
+
 
         nav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -110,6 +119,8 @@ public class CreateActivity extends AppCompatActivity {
 
     }
 
+
+
     private void openFileChooser() {
         Intent intent = new Intent();
         intent.setType("image/*");
@@ -129,6 +140,7 @@ public class CreateActivity extends AppCompatActivity {
             Toast.makeText(CreateActivity.this, "Try Later", Toast.LENGTH_SHORT).show();
         }
     }
+
 
     private void shareEmergency() {
         if (uriImage != null) {
@@ -161,6 +173,7 @@ public class CreateActivity extends AppCompatActivity {
                                     Calendar.getInstance().getTime().toString(),
                                     url,
                                     "1,1"
+
                             );
 
                             Log.i(TAG, "MODEL - " + emergency.toString());

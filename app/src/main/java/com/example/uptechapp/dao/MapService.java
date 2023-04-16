@@ -4,6 +4,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.view.Gravity;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
+import com.bumptech.glide.Glide;
 import com.example.uptechapp.R;
 import com.example.uptechapp.api.CompleteListener;
 import com.example.uptechapp.model.Emergency;
@@ -19,6 +21,9 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 public class MapService implements OnMapReadyCallback, GoogleMap.OnMapClickListener, GoogleMap.OnMapLongClickListener{
 
@@ -73,14 +78,16 @@ public class MapService implements OnMapReadyCallback, GoogleMap.OnMapClickListe
                     tv_info.setText(emergency.getDescription());
                     tv_time.setText(emergency.getTime().toString());
 
+
                     ImageView imageView = dialog.getWindow().findViewById(R.id.iv_image);
-
-                    imageView.setImageResource(R.drawable.gosuslugi);
-
-//                        FirebaseStorage firebaseStorage =
-//                                FirebaseStorage.getInstance("gs://mymaps-b35de.appspot.com");
-//                        StorageReference reference = firebaseStorage.getReference(place.getPathToImage());
-//                        Glide.with(context).load(reference).into(imageView);
+                    StorageReference reference = FirebaseStorage.getInstance().getReference(emergency.getPhotoUrl());
+                    Glide.with(context).load(emergency.getPhotoUrl()).into(imageView);
+//                    reference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+//                        @Override
+//                        public void onSuccess(Uri uri) {
+//                            Glide.with(context).load(uri).into(imageView);
+//                        }
+//                    });
 
                     return false;
                 });

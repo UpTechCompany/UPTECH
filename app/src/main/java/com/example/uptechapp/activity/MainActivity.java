@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         Database.loadEmergencies(new CompleteListener() {
             @Override
             public void OnSuccess() {
-                EmergencyAdapter adapter = new EmergencyAdapter(Database.EMERGENCIES_LIST);
+                EmergencyAdapter adapter = new EmergencyAdapter(Database.EMERGENCIES_LIST, getApplicationContext());
                 emergencyFeed.setAdapter(adapter);
 
                 progressBar.dismiss();
