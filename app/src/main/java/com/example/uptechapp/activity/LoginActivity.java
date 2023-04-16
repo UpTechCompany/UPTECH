@@ -51,45 +51,6 @@ public class LoginActivity extends AppCompatActivity {
 
         init();
 
-        Log.d("TENSHI", "poehali");
-
-
-        EmergencyApiService.getInstance().postEmergency().enqueue(new Callback<Response>() {
-            @Override
-            public void onResponse(Call<Response> call, Response<Response> response) {
-                Log.i(TAG, call.toString());
-            }
-
-            @Override
-            public void onFailure(Call<Response> call, Throwable t) {
-
-            }
-        });
-
-        EmergencyApiService.getInstance().getEmergency().enqueue(new Callback<>() {
-            @Override
-            public void onResponse(@NonNull Call<List<Emergency>> call, @NonNull Response<List<Emergency>> response) {
-                Log.d("TENSHI", response.body().toString() + "emergency");
-            }
-
-            @Override
-            public void onFailure(@NonNull Call<List<Emergency>> call, @NonNull Throwable t) {
-                t.printStackTrace();
-            }
-        });
-
-        UsersApiService.getInstance().getUsers().enqueue(new Callback<List<User>>() {
-            @Override
-            public void onResponse(@NonNull Call<List<User>> call, @NonNull Response<List<User>> response) {
-                Log.d("TENSHI", response.body().toString() + "users");
-            }
-
-            @Override
-            public void onFailure(@NonNull Call<List<User>> call, @NonNull Throwable t) {
-                Log.d("TENSHI", "qq");
-                t.printStackTrace();
-            }
-        });
     }
 
     private void init() {

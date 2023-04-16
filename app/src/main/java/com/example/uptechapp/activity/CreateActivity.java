@@ -18,6 +18,8 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.uptechapp.R;
+import com.example.uptechapp.api.EmergencyApiService;
+import com.example.uptechapp.model.Emergency;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -25,9 +27,16 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
+import java.util.Calendar;
+
+import okhttp3.ResponseBody;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+
 public class CreateActivity extends AppCompatActivity {
 
-    private static final String TAG = "CreateActivity";
+    private static final String TAG = "CreatingActivity";
     private Button btnChoose, btnShare;
     private ImageView emergencyImg;
     private EditText emergencyLabel, emergencyDescription;
@@ -141,11 +150,37 @@ public class CreateActivity extends AppCompatActivity {
                         public void onSuccess(Uri uri) {
                             Uri downloadUri = uri;
 
-                            Log.i(TAG, downloadUri.toString());
+                            String url = downloadUri.toString();
+
+                            Log.i(TAG, "URI - " + url);
+
+                            Emergency emergency = new Emergency(
+                                    "-1",
+                                    emergencyLabel.getText().toString(),
+                                    emergencyDescription.getText().toString(),
+                                    Calendar.getInstance().getTime().toString(),
+                                    url,
+                                    "1,1"
+                            );
+
+                            Log.i(TAG, "MODEL - " + emergency.toString());
+
+                            EmergencyApiService.getInstance().postJson(emergency).enqueue(new Callback<Emergency>() {
+                                @Override
+                                public void onResponse(@NonNull Call<Emergency> call, @NonNull Response<Emergency> response) {
+                                    Log.i(TAG, "Response - " + call.toString());
+                                }
+
+                                @Override
+                                public void onFailure(@NonNull Call<Emergency> call, @NonNull Throwable t) {
+                                    Log.i(TAG, "FAIL - " + t.getMessage());
+                                }
+                            });
+
                         }
                     });
 
-                    Toast.makeText(CreateActivity.this, "Upload successful", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CreateActivity.this, "Emergency created", Toast.LENGTH_SHORT).show();
 
                     Intent intent = new Intent(CreateActivity.this, MainActivity.class);
                     startActivity(intent);
