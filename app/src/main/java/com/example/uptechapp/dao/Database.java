@@ -1,14 +1,14 @@
-package com.example.uptechapp;
+package com.example.uptechapp.dao;
 
 import android.os.Build;
-import android.util.Log;
 
 import androidx.annotation.NonNull;
 
-import com.google.android.gms.maps.model.LatLng;
+import com.example.uptechapp.api.CompleteListener;
+import com.example.uptechapp.api.EmergencyApiService;
+import com.example.uptechapp.model.Emergency;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import retrofit2.Call;

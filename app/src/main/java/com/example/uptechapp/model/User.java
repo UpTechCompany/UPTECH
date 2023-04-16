@@ -1,4 +1,4 @@
-package com.example.uptechapp;
+package com.example.uptechapp.model;
 
 public class User {
     private long id;

@@ -1,4 +1,4 @@
-package com.example.uptechapp;
+package com.example.uptechapp.dao;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.moshi.MoshiConverterFactory;

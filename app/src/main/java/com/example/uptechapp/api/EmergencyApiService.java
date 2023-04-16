@@ -1,4 +1,6 @@
-package com.example.uptechapp;
+package com.example.uptechapp.api;
+
+import com.example.uptechapp.dao.RetrofitService;
 
 public class EmergencyApiService {
     private static EmergencyApi emergencyApi;
@@ -8,7 +10,9 @@ public class EmergencyApiService {
     }
 
     public static EmergencyApi getInstance() {
-        if (emergencyApi == null) emergencyApi = create();
+        if (emergencyApi == null) {
+            emergencyApi = create();
+        }
         return emergencyApi;
     }
 }

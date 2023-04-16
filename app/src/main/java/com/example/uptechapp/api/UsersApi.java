@@ -1,6 +1,6 @@
-package com.example.uptechapp;
+package com.example.uptechapp.api;
 
-import com.example.uptechapp.User;
+import com.example.uptechapp.model.User;
 
 import java.util.List;
 

@@ -1,7 +1,6 @@
-package com.example.uptechapp;
+package com.example.uptechapp.api;
 
-import com.example.uptechapp.RetrofitService;
-import com.example.uptechapp.UsersApi;
+import com.example.uptechapp.dao.RetrofitService;
 
 public class UsersApiService {
 

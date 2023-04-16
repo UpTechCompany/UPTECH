@@ -1,4 +1,4 @@
-package com.example.uptechapp;
+package com.example.uptechapp.activity;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.IntentSenderRequest;
@@ -17,6 +17,11 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.uptechapp.model.Emergency;
+import com.example.uptechapp.api.EmergencyApiService;
+import com.example.uptechapp.R;
+import com.example.uptechapp.model.User;
+import com.example.uptechapp.api.UsersApiService;
 import com.google.android.gms.auth.api.identity.BeginSignInRequest;
 import com.google.android.gms.auth.api.identity.Identity;
 import com.google.android.gms.auth.api.identity.SignInClient;
@@ -48,7 +53,20 @@ public class LoginActivity extends AppCompatActivity {
 
         Log.d("TENSHI", "poehali");
 
-        EmergencyApiService.getInstance().getEmergency().enqueue(new Callback<List<Emergency>>() {
+
+        EmergencyApiService.getInstance().postEmergency().enqueue(new Callback<Response>() {
+            @Override
+            public void onResponse(Call<Response> call, Response<Response> response) {
+                Log.i(TAG, call.toString());
+            }
+
+            @Override
+            public void onFailure(Call<Response> call, Throwable t) {
+
+            }
+        });
+
+        EmergencyApiService.getInstance().getEmergency().enqueue(new Callback<>() {
             @Override
             public void onResponse(@NonNull Call<List<Emergency>> call, @NonNull Response<List<Emergency>> response) {
                 Log.d("TENSHI", response.body().toString() + "emergency");

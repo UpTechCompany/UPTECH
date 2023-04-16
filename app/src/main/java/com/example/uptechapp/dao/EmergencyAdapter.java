@@ -1,4 +1,4 @@
-package com.example.uptechapp;
+package com.example.uptechapp.dao;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -9,6 +9,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.uptechapp.R;
+import com.example.uptechapp.model.Emergency;
 
 import java.util.List;
 

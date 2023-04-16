@@ -1,4 +1,4 @@
-package com.example.uptechapp;
+package com.example.uptechapp.model;
 
 import com.google.android.gms.maps.model.LatLng;
 

@@ -1,4 +1,4 @@
-package com.example.uptechapp;
+package com.example.uptechapp.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,8 +14,11 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.uptechapp.api.CompleteListener;
+import com.example.uptechapp.dao.Database;
+import com.example.uptechapp.dao.EmergencyAdapter;
+import com.example.uptechapp.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationBarMenu;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,14 +36,6 @@ public class MainActivity extends AppCompatActivity {
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         layoutManager.setOrientation(RecyclerView.VERTICAL);
         emergencyFeed.setLayoutManager(layoutManager);
-
-        findViewById(R.id.showMap).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, MapActivity.class);
-                startActivity(intent);
-            }
-        });
 
         Database.loadEmergencies(new CompleteListener() {
             @Override
