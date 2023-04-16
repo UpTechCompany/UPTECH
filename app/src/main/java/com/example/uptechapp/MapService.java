@@ -15,11 +15,7 @@ import androidx.annotation.NonNull;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class MapService implements OnMapReadyCallback, GoogleMap.OnMapClickListener, GoogleMap.OnMapLongClickListener{
 
@@ -51,12 +47,12 @@ public class MapService implements OnMapReadyCallback, GoogleMap.OnMapClickListe
         Database.loadEmergencies(new CompleteListener() {
             @Override
             public void OnSuccess() {
-                for (EmergencyModel emergency: Database.EMERGENCIES_LIST) {
+                for (Emergency emergency: Database.EMERGENCIES_LIST) {
                     googleMap.addMarker(new MarkerOptions().position(emergency.getLocation()).title(emergency.getTitle()));
                 }
 
                 googleMap.setOnMarkerClickListener(marker -> {
-                    EmergencyModel emergency = Database.getEmergencyByTitle(marker.getTitle());
+                    Emergency emergency = Database.getEmergencyByTitle(marker.getTitle());
 
                     Dialog dialog = new Dialog(context);
                     dialog.setContentView(R.layout.dialog_fragment);

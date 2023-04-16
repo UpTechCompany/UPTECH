@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -7,20 +8,23 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/purple_500"
+        android:background="@color/dark_gray_figma"
         >
+
         <TextView
             android:id="@+id/info"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Tell us about emergency"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-            android:textColor="@color/white"
-            android:text="Tell us about emergency"
 
+            android:textColor="@color/white"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/editTextLabel"
@@ -40,7 +44,7 @@
             android:inputType="text"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/info"/>
+            app:layout_constraintTop_toBottomOf="@+id/info" />
 
         <ImageView
             android:id="@+id/emergencyImg"
@@ -98,29 +102,30 @@
             app:layout_constraintTop_toBottomOf="@+id/editTextDescription"/>
 
         <TextView
+            android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="80dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnShare"/>
+            app:layout_constraintTop_toBottomOf="@+id/btnShare" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNavBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="8dp"
             android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
             android:layout_marginRight="24dp"
             android:background="@drawable/round_view"
             android:elevation="5dp"
             app:itemIconTint="@color/design_default_color_primary"
             app:itemTextColor="@color/design_default_color_primary"
-            app:menu="@menu/bottom_menu"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintTop_toBottomOf="@+id/btnShare"
+            app:menu="@menu/bottom_menu" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -3,24 +3,29 @@ package com.example.uptechapp;
 import com.google.android.gms.maps.model.LatLng;
 
 import java.util.Date;
+import java.util.SimpleTimeZone;
 
-public class EmergencyModel {
+public class Emergency {
     private String id;
-    private String author;
     private String photoUrl;
     private String title;
     private String description;
-    private Date time;
+    private String time;
+    private String locationSTR;
     private LatLng location;
 
-    public EmergencyModel(String id, String author, String photoUrl, String title, String description, Date time, LatLng location) {
+
+    public Emergency(String id, String title, String description, String time, String photoUrl, String locationSTR) {
         this.id = id;
-        this.author = author;
         this.photoUrl = photoUrl;
         this.title = title;
         this.description = description;
         this.time = time;
-        this.location = location;
+        this.locationSTR = locationSTR;
+        String[] latlong =  locationSTR.split(",");
+        double latitude = Double.parseDouble(latlong[0]);
+        double longitude = Double.parseDouble(latlong[1]);
+        location = new LatLng(latitude, longitude);
     }
 
     public String getId() {
@@ -29,14 +34,6 @@ public class EmergencyModel {
 
     public void setId(String id) {
         this.id = id;
-    }
-
-    public String getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
     }
 
     public String getPhotoUrl() {
@@ -63,11 +60,11 @@ public class EmergencyModel {
         this.description = description;
     }
 
-    public Date getTime() {
+    public String getTime() {
         return time;
     }
 
-    public void setTime(Date time) {
+    public void setTime(String time) {
         this.time = time;
     }
 
@@ -77,5 +74,18 @@ public class EmergencyModel {
 
     public void setLocation(LatLng location) {
         this.location = location;
+    }
+
+    @Override
+    public String toString() {
+        return "Emergency{" +
+                "id='" + id + '\'' +
+                ", photoUrl='" + photoUrl + '\'' +
+                ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", time='" + time + '\'' +
+                ", locationSTR='" + locationSTR + '\'' +
+                ", location=" + location +
+                '}';
     }
 }

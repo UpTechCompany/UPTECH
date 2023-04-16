@@ -3,17 +3,16 @@ package com.example.uptechapp;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.IntentSenderRequest;
 import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -23,6 +22,12 @@ import com.google.android.gms.auth.api.identity.Identity;
 import com.google.android.gms.auth.api.identity.SignInClient;
 import com.google.android.gms.auth.api.identity.SignInCredential;
 import com.google.android.gms.common.api.ApiException;
+
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -40,6 +45,33 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         init();
+
+        Log.d("TENSHI", "poehali");
+
+        EmergencyApiService.getInstance().getEmergency().enqueue(new Callback<List<Emergency>>() {
+            @Override
+            public void onResponse(@NonNull Call<List<Emergency>> call, @NonNull Response<List<Emergency>> response) {
+                Log.d("TENSHI", response.body().toString() + "emergency");
+            }
+
+            @Override
+            public void onFailure(@NonNull Call<List<Emergency>> call, @NonNull Throwable t) {
+                t.printStackTrace();
+            }
+        });
+
+        UsersApiService.getInstance().getUsers().enqueue(new Callback<List<User>>() {
+            @Override
+            public void onResponse(@NonNull Call<List<User>> call, @NonNull Response<List<User>> response) {
+                Log.d("TENSHI", response.body().toString() + "users");
+            }
+
+            @Override
+            public void onFailure(@NonNull Call<List<User>> call, @NonNull Throwable t) {
+                Log.d("TENSHI", "qq");
+                t.printStackTrace();
+            }
+        });
     }
 
     private void init() {
@@ -88,7 +120,7 @@ public class LoginActivity extends AppCompatActivity {
 
                         // get id from database
 
-                        UserModel user = new UserModel (
+                        User user = new User(
                                 -1,
                                 credential.getDisplayName(),
                                 credential.getId()

@@ -10,15 +10,14 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.Date;
 import java.util.List;
 
 public class EmergencyAdapter extends RecyclerView.Adapter<EmergencyAdapter.ViewHolder> {
 
-    private List<EmergencyModel> emergenciesList;
+    private List<Emergency> emergenciesList;
     static final String TAG = "AdapterEmergency";
 
-    public EmergencyAdapter(List<EmergencyModel> emergenciesList) {
+    public EmergencyAdapter(List<Emergency> emergenciesList) {
         this.emergenciesList = emergenciesList;
     }
 
@@ -32,7 +31,7 @@ public class EmergencyAdapter extends RecyclerView.Adapter<EmergencyAdapter.View
     @Override
     public void onBindViewHolder(@NonNull EmergencyAdapter.ViewHolder holder, int position) {
 
-        EmergencyModel emergency = emergenciesList.get(position);
+        Emergency emergency = emergenciesList.get(position);
 
         Log.i(TAG, "Emergency - " + emergency.getTitle());
 
@@ -64,7 +63,7 @@ public class EmergencyAdapter extends RecyclerView.Adapter<EmergencyAdapter.View
 
         }
 
-        private void setData(String title, String description, Date time, String photo) {
+        private void setData(String title, String description, String time, String photo) {
 
         try {
             emergencyTitle.setText(title);

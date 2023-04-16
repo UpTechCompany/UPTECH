@@ -4,16 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashActivity">
+    tools:context=".SplashActivity"
+    android:background="@color/dark_gray_figma">
 
-    <ImageView
-        android:id="@+id/appLogo"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+    <View
+        android:id="@+id/ellipse"
+        android:layout_width="275dp"
+        android:layout_height="275dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="228dp"
+        android:background="@drawable/ellipse"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/img_logo"/>
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="272dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="92dp"
+        android:gravity="center"
+        android:text="LOOKOUT"
+        android:textColor="@color/purple_figma"
+        android:textSize="60dp"
+        app:layout_constraintStart_toStartOf="@+id/ellipse"
+        app:layout_constraintTop_toTopOf="@+id/ellipse" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
