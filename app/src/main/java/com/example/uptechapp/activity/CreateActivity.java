@@ -172,7 +172,7 @@ public class CreateActivity extends AppCompatActivity {
                                     emergencyDescription.getText().toString(),
                                     Calendar.getInstance().getTime().toString(),
                                     url,
-                                    "1,1"
+                                    "52, 104"
 
                             );
 

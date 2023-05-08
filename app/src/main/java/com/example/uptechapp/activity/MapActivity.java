@@ -3,6 +3,7 @@ package com.example.uptechapp.activity;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -26,10 +27,12 @@ public class MapActivity extends AppCompatActivity {
                 getSupportFragmentManager().findFragmentById(R.id.google_map);
 
         mapFragment.getMapAsync(new MapService(this));
+        MapService mapService = new MapService(this);
     }
 
     private void init() {
         BottomNavigationView nav = findViewById(R.id.bottomNavBar);
+
 
         nav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override

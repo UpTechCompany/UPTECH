@@ -11,5 +11,6 @@
     <string name="time">Time</string>
     <string name="info">Info</string>
     <string name="name">Name</string>
+    <string name="title"><b>Title</b></string>
 
 </resources>

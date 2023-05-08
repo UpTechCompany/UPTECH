@@ -1,5 +1,7 @@
 package com.example.uptechapp.model;
 
+import android.util.Log;
+
 import com.google.android.gms.maps.model.LatLng;
 
 import java.util.Date;
@@ -25,7 +27,9 @@ public class Emergency {
         String[] latlong =  locationSTR.split(",");
         double latitude = Double.parseDouble(latlong[0]);
         double longitude = Double.parseDouble(latlong[1]);
+        Log.d("TENSHI", "Emergency1: " + locationSTR);
         location = new LatLng(latitude, longitude);
+        Log.d("TENSHI", "Emergency2: " + location);
     }
 
     public String getId() {

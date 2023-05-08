@@ -5,6 +5,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -56,6 +57,7 @@ public class MapService implements OnMapReadyCallback, GoogleMap.OnMapClickListe
             @Override
             public void OnSuccess() {
                 for (Emergency emergency: Database.EMERGENCIES_LIST) {
+                    Log.d("TENSHI", Database.EMERGENCIES_LIST.toString());
                     googleMap.addMarker(new MarkerOptions().position(emergency.getLocation()).title(emergency.getTitle()));
                 }
 
