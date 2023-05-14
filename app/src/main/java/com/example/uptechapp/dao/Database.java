@@ -22,26 +22,10 @@ public class Database {
     public static void loadEmergencies (CompleteListener listener) {
         EMERGENCIES_LIST.clear();
         try {
-
-//            // get data from server
-//            for (int i=1; i < 11; i++) {
-//                EMERGENCIES_LIST.add(new EmergencyModel(
-//                        String.valueOf(i),
-//                        "someone",
-//                        "url",
-//                        "title " + String.valueOf(i),
-//                        "description " + String.valueOf(i),
-//                        new Date(2023, 01, 23),
-//                        new LatLng(56.130366 + (i), -106.346771 - (i))
-//                ));
-//            }
-
             EmergencyApiService.getInstance().getEmergency().enqueue(new Callback<List<Emergency>>() {
                 @Override
                 public void onResponse(@NonNull Call<List<Emergency>> call, @NonNull Response<List<Emergency>> response) {
-                    for (int i = 0; i < response.body().size(); i++){
-                        EMERGENCIES_LIST.add(response.body().get(i));
-                    }
+                    EMERGENCIES_LIST.addAll(response.body());
                 }
 
                 @Override

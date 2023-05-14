@@ -13,23 +13,21 @@ public class Emergency {
     private String title;
     private String description;
     private String time;
-    private String locationSTR;
+    private double latitude;
+    private double longitude;
     private LatLng location;
 
 
-    public Emergency(String id, String title, String description, String time, String photoUrl, String locationSTR) {
+    public Emergency(String id, String title, String description, String time, String photoUrl, double latitude, double longitude) {
         this.id = id;
         this.photoUrl = photoUrl;
         this.title = title;
         this.description = description;
         this.time = time;
-        this.locationSTR = locationSTR;
-        String[] latlong =  locationSTR.split(",");
-        double latitude = Double.parseDouble(latlong[0]);
-        double longitude = Double.parseDouble(latlong[1]);
-        Log.d("TENSHI", "Emergency1: " + locationSTR);
-        location = new LatLng(latitude, longitude);
-        Log.d("TENSHI", "Emergency2: " + location);
+        this.latitude = latitude;
+        this.longitude = longitude;
+        this.location = new LatLng(this.latitude, this.longitude);
+        Log.d("TENSHI", "Emergency: " + location);
     }
 
     public String getId() {
@@ -88,7 +86,8 @@ public class Emergency {
                 ", title='" + title + '\'' +
                 ", description='" + description + '\'' +
                 ", time='" + time + '\'' +
-                ", locationSTR='" + locationSTR + '\'' +
+                ", latitude=" + latitude +
+                ", longitude=" + longitude +
                 ", location=" + location +
                 '}';
     }

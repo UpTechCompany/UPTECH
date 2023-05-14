@@ -53,14 +53,14 @@ public class MapService implements OnMapReadyCallback, GoogleMap.OnMapClickListe
 
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
+        Log.d(TAG, "onMapReady: READY");
         googleMap.setOnMapClickListener(this);
         googleMap.setOnMapLongClickListener(this);
-
         Database.loadEmergencies(new CompleteListener() {
             @Override
             public void OnSuccess() {
                 for (Emergency emergency: Database.EMERGENCIES_LIST) {
-                    Log.d("TENSHI", Database.EMERGENCIES_LIST.toString());
+                    Log.d(TAG, Database.EMERGENCIES_LIST.toString());
                     googleMap.addMarker(new MarkerOptions().position(emergency.getLocation()).title(emergency.getTitle()));
                 }
 
@@ -97,11 +97,12 @@ public class MapService implements OnMapReadyCallback, GoogleMap.OnMapClickListe
                     return false;
                 });
             }
-
             @Override
             public void OnFailure() {
                 Toast.makeText(context, "Try Later", Toast.LENGTH_SHORT).show();
+                Log.d(TAG, "OnFailure: fail");
             }
         });
+        Log.d(TAG, "onMapReady: proehali");
     }
 }
