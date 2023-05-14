@@ -1,6 +1,7 @@
 package com.example.uptechapp.dao;
 
 import android.app.Dialog;
+import android.app.FragmentManager;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -13,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.bumptech.glide.Glide;
 import com.example.uptechapp.R;
@@ -46,6 +48,7 @@ public class MapService implements OnMapReadyCallback, GoogleMap.OnMapClickListe
     public void onMapLongClick(@NonNull LatLng latLng) {
         Toast.makeText(context, "LONG " + latLng.latitude + " "
                 + latLng.longitude, Toast.LENGTH_SHORT).show();
+
     }
 
     @Override
@@ -83,7 +86,7 @@ public class MapService implements OnMapReadyCallback, GoogleMap.OnMapClickListe
 
                     ImageView imageView = dialog.getWindow().findViewById(R.id.iv_image);
                     StorageReference reference = FirebaseStorage.getInstance().getReference(emergency.getPhotoUrl());
-                    Glide.with(context).load(emergency.getPhotoUrl()).into(imageView);
+                    Glide.with(context).load(reference).into(imageView);
 //                    reference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
 //                        @Override
 //                        public void onSuccess(Uri uri) {

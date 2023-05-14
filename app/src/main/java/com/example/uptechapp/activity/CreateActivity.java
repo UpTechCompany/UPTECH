@@ -101,7 +101,7 @@ public class CreateActivity extends AppCompatActivity {
         emergencyDescription = findViewById(R.id.editTextDescription);
         emergencyImg = findViewById(R.id.emergencyImg);
 
-        storageReference = FirebaseStorage.getInstance().getReference("EmergencyPictures");
+        storageReference = FirebaseStorage.getInstance().getReference("Emergency");
 
         btnChoose.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -150,7 +150,8 @@ public class CreateActivity extends AppCompatActivity {
 
             int id = 1;
 
-            StorageReference fileReference = storageReference.child(String.valueOf(id) + "/ProfilePictures." + getFileExtension(uriImage));
+//            StorageReference fileReference = storageReference.child(String.valueOf(id) + "/Photo." + getFileExtension(uriImage));
+            StorageReference fileReference = storageReference.child(String.valueOf(id) + "/Photo." + getFileExtension(uriImage));
             //Toast.makeText(UploadProfilePictureActivity.this, fileReference.toString(), Toast.LENGTH_SHORT).show();
 
             //Upload image to Storage
@@ -173,7 +174,6 @@ public class CreateActivity extends AppCompatActivity {
                                     Calendar.getInstance().getTime().toString(),
                                     url,
                                     "52, 104"
-
                             );
 
                             Log.i(TAG, "MODEL - " + emergency.toString());

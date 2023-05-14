@@ -2,6 +2,8 @@ package com.example.uptechapp.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +11,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.example.uptechapp.activity.fragments.CreateFragment;
 import com.example.uptechapp.dao.MapService;
 import com.example.uptechapp.R;
 import com.google.android.gms.maps.SupportMapFragment;
@@ -25,9 +28,14 @@ public class MapActivity extends AppCompatActivity {
 
         SupportMapFragment mapFragment = (SupportMapFragment)
                 getSupportFragmentManager().findFragmentById(R.id.google_map);
-
         mapFragment.getMapAsync(new MapService(this));
         MapService mapService = new MapService(this);
+
+//        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+//        transaction.replace(R.id.dialog_fragment, new CreateFragment());
+//        transaction.addToBackStack(null);
+//        transaction.commit();
+
     }
 
     private void init() {
