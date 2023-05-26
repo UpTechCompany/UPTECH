@@ -7,30 +7,18 @@
     tools:context=".activity.SplashActivity"
     android:background="@color/dark_gray_figma">
 
-    <View
-        android:id="@+id/ellipse"
-        android:layout_width="275dp"
-        android:layout_height="275dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="228dp"
-        android:background="@drawable/ellipse"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="272dp"
         android:layout_height="89dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="320dp"
         android:gravity="center"
         android:text="LOOKOUT"
         android:textColor="@color/purple_figma"
-        android:textSize="60dp"
-        app:layout_constraintStart_toStartOf="@+id/ellipse"
-        app:layout_constraintTop_toTopOf="@+id/ellipse" />
+        android:textSize="60sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -78,8 +78,6 @@ public class LoginActivity extends AppCompatActivity {
 
         activityResultLauncher = registerForActivityResult(new ActivityResultContracts.StartIntentSenderForResult(), result -> {
 
-            Log.i(TAG, result.toString());
-
             if (result.getResultCode() == RESULT_OK) {
 
                 try {
@@ -109,8 +107,6 @@ public class LoginActivity extends AppCompatActivity {
 
                         editor.putLong(getString(R.string.id_logging), id);
                         editor.apply();
-
-                        Log.i(TAG, "ID " + sharedPref.getLong(getString(R.string.id_logging), 0L));
 
                         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                         startActivity(intent);

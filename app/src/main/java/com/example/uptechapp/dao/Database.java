@@ -1,9 +1,11 @@
 package com.example.uptechapp.dao;
 
 import android.os.Build;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 
+import com.example.uptechapp.MyViewModel;
 import com.example.uptechapp.api.CompleteListener;
 import com.example.uptechapp.api.EmergencyApiService;
 import com.example.uptechapp.model.Emergency;
@@ -18,14 +20,19 @@ import retrofit2.Response;
 public class Database {
 
     public static List<Emergency> EMERGENCIES_LIST = new ArrayList<>();
+    public static List<Emergency> EMERGENCIES_LIST_FAKE = new ArrayList<>();
 
     public static void loadEmergencies (CompleteListener listener) {
+        EMERGENCIES_LIST_FAKE.add(new Emergency("0", "qq", "qq", "11", "ss", 52, 104));
+        Log.d("MapService", "EML " + EMERGENCIES_LIST.toString());
         EMERGENCIES_LIST.clear();
         try {
             EmergencyApiService.getInstance().getEmergency().enqueue(new Callback<List<Emergency>>() {
                 @Override
                 public void onResponse(@NonNull Call<List<Emergency>> call, @NonNull Response<List<Emergency>> response) {
                     EMERGENCIES_LIST.addAll(response.body());
+                    MyViewModel.getInstance().getEmergencyLiveData().postValue(EMERGENCIES_LIST);
+                    Log.d("MapService", "1loadEmergencies complete: " + EMERGENCIES_LIST.toString());
                 }
 
                 @Override
@@ -33,13 +40,11 @@ public class Database {
                     t.printStackTrace();
                 }
             });
-
             listener.OnSuccess();
-
+            Log.d("MapService", "2loadEmergencies complete: " + EMERGENCIES_LIST.toString());
         } catch (Exception e) {
             listener.OnFailure();
         }
-
     }
 
     public static Emergency getEmergencyByTitle(String title) {

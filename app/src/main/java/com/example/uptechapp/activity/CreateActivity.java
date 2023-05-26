@@ -24,6 +24,7 @@ import android.widget.Toast;
 import com.example.uptechapp.R;
 import com.example.uptechapp.api.EmergencyApiService;
 import com.example.uptechapp.api.ListenerLocation;
+import com.example.uptechapp.api.MyLocationListener;
 import com.example.uptechapp.model.Emergency;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -33,6 +34,7 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Locale;
@@ -70,22 +72,16 @@ public class CreateActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.nav_feed:
-                        Toast.makeText(CreateActivity.this, "Feed", Toast.LENGTH_SHORT).show();
-//                        setFragment(new CategoryFragment());
                         Intent intent = new Intent(CreateActivity.this, MainActivity.class);
                         startActivity(intent);
                         return true;
 
                     case R.id.nav_create:
-                        Toast.makeText(CreateActivity.this, "Create", Toast.LENGTH_SHORT).show();
-//                        setFragment(new LeaderBordFragment());
                         intent = new Intent(CreateActivity.this, CreateActivity.class);
                         startActivity(intent);
                         return true;
 
                     case R.id.nav_map:
-                        Toast.makeText(CreateActivity.this, "MAP", Toast.LENGTH_SHORT).show();
-//                        setFragment(new AccountFragment());
                         intent = new Intent(CreateActivity.this, MapActivity.class);
                         startActivity(intent);
 
@@ -145,16 +141,10 @@ public class CreateActivity extends AppCompatActivity {
     private void shareEmergency() {
         if (uriImage != null) {
 
-            //Save image
-            // TODO: change id
-
             int id = 1;
 
-//            StorageReference fileReference = storageReference.child(String.valueOf(id) + "/Photo." + getFileExtension(uriImage));
             StorageReference fileReference = storageReference.child(String.valueOf(id) + "/Photo." + getFileExtension(uriImage));
-            //Toast.makeText(UploadProfilePictureActivity.this, fileReference.toString(), Toast.LENGTH_SHORT).show();
 
-            //Upload image to Storage
             fileReference.putFile(uriImage).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                 @Override
                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
@@ -164,8 +154,8 @@ public class CreateActivity extends AppCompatActivity {
                             Uri downloadUri = uri;
 
                             String url = downloadUri.toString();
-
-                            Log.i(TAG, "URI - " + url);
+                            String[] time = Calendar.getInstance().getTime().toString().split(" ");
+                            Log.i("time", "Time" + Arrays.toString(time));
 
                             Emergency emergency = new Emergency(
                                     "-1",
@@ -173,11 +163,9 @@ public class CreateActivity extends AppCompatActivity {
                                     emergencyDescription.getText().toString(),
                                     Calendar.getInstance().getTime().toString(),
                                     url,
-                                    52.2978,
-                                    104.296
+                                    104,
+                                    60
                             );
-
-                            Log.i(TAG, "MODEL - " + emergency.toString());
 
                             EmergencyApiService.getInstance().postJson(emergency).enqueue(new Callback<Emergency>() {
                                 @Override
@@ -193,8 +181,6 @@ public class CreateActivity extends AppCompatActivity {
 
                         }
                     });
-
-                    Toast.makeText(CreateActivity.this, "Emergency created", Toast.LENGTH_SHORT).show();
 
                     Intent intent = new Intent(CreateActivity.this, MainActivity.class);
                     startActivity(intent);

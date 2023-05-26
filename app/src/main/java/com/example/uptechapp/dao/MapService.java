@@ -1,11 +1,18 @@
 package com.example.uptechapp.dao;
 
+import android.Manifest;
+import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.app.FragmentManager;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
 import android.net.Uri;
+import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.ViewGroup;
@@ -14,12 +21,20 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.lifecycle.LifecycleOwner;
+import androidx.lifecycle.Observer;
 
 import com.bumptech.glide.Glide;
+import com.example.uptechapp.MyViewModel;
 import com.example.uptechapp.R;
 import com.example.uptechapp.api.CompleteListener;
+import com.example.uptechapp.api.MyLocationListener;
 import com.example.uptechapp.model.Emergency;
+import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
@@ -28,13 +43,26 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
-public class MapService implements OnMapReadyCallback, GoogleMap.OnMapClickListener, GoogleMap.OnMapLongClickListener{
+import java.util.List;
+
+public class MapService implements OnMapReadyCallback, GoogleMap.OnMapClickListener,
+        GoogleMap.OnMapLongClickListener{
 
     private static final String TAG = "MapService";
     private final Context context;
+    private LocationManager locationManager;
+    private final AppCompatActivity activity;
+    private LifecycleOwner lifecycleOwner;
+    private List<Emergency> myEmergencyList;
 
-    public MapService(Context context) {
+
+
+    public MapService(Context context, AppCompatActivity activity, LifecycleOwner lifecycleOwner) {
         this.context = context;
+        this.activity = activity;
+        this.lifecycleOwner = lifecycleOwner;
+        myEmergencyList = MyViewModel.getInstance().getEmergencyLiveData().getValue();
+        locationManager = (LocationManager) context.getSystemService(Context.LOCATION_SERVICE);
     }
 
 
@@ -48,23 +76,51 @@ public class MapService implements OnMapReadyCallback, GoogleMap.OnMapClickListe
     public void onMapLongClick(@NonNull LatLng latLng) {
         Toast.makeText(context, "LONG " + latLng.latitude + " "
                 + latLng.longitude, Toast.LENGTH_SHORT).show();
-
     }
+
+//    @Override
+//    public void onLocationChanged(Location location) {
+//        double latitude = location.getLatitude();
+//        double longitude = location.getLongitude();
+//        Toast.makeText(context, "Latitude: " + latitude + ", Longitude: " + longitude, Toast.LENGTH_SHORT).show();
+//    }
+
+
+
 
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
         Log.d(TAG, "onMapReady: READY");
         googleMap.setOnMapClickListener(this);
         googleMap.setOnMapLongClickListener(this);
+        List<Emergency> myEmergencyList = MyViewModel.getInstance().getEmergencyLiveData().getValue();
+        Log.i("qq", "myEmergencyList" + myEmergencyList.toString());
         Database.loadEmergencies(new CompleteListener() {
             @Override
             public void OnSuccess() {
-                for (Emergency emergency: Database.EMERGENCIES_LIST) {
-                    Log.d(TAG, Database.EMERGENCIES_LIST.toString());
+
+            }
+
+            @Override
+            public void OnFailure() {
+
+            }
+        });
+
+        Log.d(TAG, "onMapReady: check before load emergencies");
+
+                Log.i(TAG, "OnSuccess: " + myEmergencyList.toString());
+                for (Emergency emergency: myEmergencyList) {
                     googleMap.addMarker(new MarkerOptions().position(emergency.getLocation()).title(emergency.getTitle()));
+                    Log.d(TAG, "OnSuccess: add emergency");
                 }
+//                for (Emergency emergency: Database.EMERGENCIES_LIST_FAKE) {
+//                    googleMap.addMarker(new MarkerOptions().position(emergency.getLocation()).title(emergency.getTitle()));
+//                }
+//                Log.d(TAG, "OnSuccess: mejdu");
 
                 googleMap.setOnMarkerClickListener(marker -> {
+                    Log.d(TAG, "OnSuccess: markerclicklistener");
                     Emergency emergency = Database.getEmergencyByTitle(marker.getTitle());
 
                     Dialog dialog = new Dialog(context);
@@ -96,13 +152,17 @@ public class MapService implements OnMapReadyCallback, GoogleMap.OnMapClickListe
 
                     return false;
                 });
-            }
-            @Override
-            public void OnFailure() {
-                Toast.makeText(context, "Try Later", Toast.LENGTH_SHORT).show();
-                Log.d(TAG, "OnFailure: fail");
-            }
-        });
-        Log.d(TAG, "onMapReady: proehali");
+            final Observer<List<Emergency>> myObserver = new Observer<List<Emergency>>() {
+                @Override
+                public void onChanged(List<Emergency> emergencies) {
+                    Log.d("NIKITA", "INOF");
+                    Log.d("NIKITA", String.valueOf(emergencies.size()));
+                    myEmergencyList.clear();
+                    myEmergencyList.addAll(emergencies);
+                }
+            };
+            MyViewModel.getInstance().getEmergencyLiveData().observe(lifecycleOwner, myObserver);
+            Log.d(TAG, "onMapReady: proehali");
+        }
+
     }
-}

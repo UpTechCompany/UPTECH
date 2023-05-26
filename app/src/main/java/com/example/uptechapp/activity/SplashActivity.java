@@ -31,15 +31,17 @@ public class SplashActivity extends AppCompatActivity {
                 SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
                 id = sharedPref.getLong(getString(R.string.id_logging), 0L);
 
-
-                Log.i(TAG, "ID - " + sharedPref.getLong(getString(R.string.id_logging), 0L));
-
             } catch (Exception e) {
                 Log.i(TAG, e.getMessage());
             }
 
             Intent intent;
-            intent = new Intent(SplashActivity.this, LoginActivity.class);
+            if (id != 0l){
+                intent = new Intent(SplashActivity.this, MainActivity.class);
+            }
+            else {
+                intent = new Intent(SplashActivity.this, MainActivity.class);
+            }
 
 
             startActivity(intent);

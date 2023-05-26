@@ -24,22 +24,26 @@ public class EmergencyAdapter extends RecyclerView.Adapter<EmergencyAdapter.View
     private Context context;
 
     public EmergencyAdapter(List<Emergency> emergenciesList, Context context) {
+        Log.d(TAG, "EmergencyAdapter: " + emergenciesList);
         this.emergenciesList = emergenciesList;
         this.context = context;
+        Log.d(TAG, "EmergencyAdapter: CREATE");
     }
 
     @NonNull
     @Override
     public EmergencyAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_emergency2, parent, false);
+        Log.d(TAG, "onCreateViewHolder: return");
         return new EmergencyAdapter.ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull EmergencyAdapter.ViewHolder holder, int position) {
-
+        Log.d(TAG, "onBindViewHolder: start");
         Emergency emergency = emergenciesList.get(position);
 
+        Log.d(TAG, "onBindViewHolder: go");
         Log.i(TAG, "Emergency - " + emergency.getTitle());
 
         holder.setData(
