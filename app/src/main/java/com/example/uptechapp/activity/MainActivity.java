@@ -2,29 +2,39 @@ package com.example.uptechapp.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.Observer;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.uptechapp.MyViewModel;
 import com.example.uptechapp.api.CompleteListener;
 import com.example.uptechapp.dao.Database;
 import com.example.uptechapp.dao.EmergencyAdapter;
 import com.example.uptechapp.R;
+import com.example.uptechapp.model.Emergency;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     private RecyclerView emergencyFeed;
     private Dialog progressBar;
     private TextView dialogText;
+
+    List<Emergency> myEmergencyList;
+    EmergencyAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,12 +47,14 @@ public class MainActivity extends AppCompatActivity {
         layoutManager.setOrientation(RecyclerView.VERTICAL);
         emergencyFeed.setLayoutManager(layoutManager);
 
+        myEmergencyList = new ArrayList<Emergency>();
+        adapter = new EmergencyAdapter(myEmergencyList, getApplicationContext());
+
+        emergencyFeed.setAdapter(adapter);
+
         Database.loadEmergencies(new CompleteListener() {
             @Override
             public void OnSuccess() {
-                EmergencyAdapter adapter = new EmergencyAdapter(Database.EMERGENCIES_LIST, getApplicationContext());
-                emergencyFeed.setAdapter(adapter);
-
                 progressBar.dismiss();
             }
 
@@ -52,6 +64,19 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        final Observer<List<Emergency>> myObserver = new Observer<List<Emergency>>() {
+            @Override
+            public void onChanged(List<Emergency> emergencies) {
+                Log.d("NIKITA", "INOF");
+                Log.d("NIKITA", String.valueOf(emergencies.size()));
+                myEmergencyList.clear();
+                myEmergencyList.addAll(emergencies);
+                adapter.notifyDataSetChanged();
+            }
+        };
+        MyViewModel.getInstance().getEmergencyLiveData().observe(this, myObserver);
+//        MyViewModel.getInstance().getEmergencyLiveData().getValue();
 
     }
 

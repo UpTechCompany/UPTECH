@@ -4,6 +4,7 @@ import android.os.Build;
 
 import androidx.annotation.NonNull;
 
+import com.example.uptechapp.MyViewModel;
 import com.example.uptechapp.api.CompleteListener;
 import com.example.uptechapp.api.EmergencyApiService;
 import com.example.uptechapp.model.Emergency;
@@ -17,6 +18,8 @@ import retrofit2.Response;
 
 public class Database {
 
+
+
     public static List<Emergency> EMERGENCIES_LIST = new ArrayList<>();
 
     public static void loadEmergencies (CompleteListener listener) {
@@ -26,6 +29,7 @@ public class Database {
                 @Override
                 public void onResponse(@NonNull Call<List<Emergency>> call, @NonNull Response<List<Emergency>> response) {
                     EMERGENCIES_LIST.addAll(response.body());
+                    MyViewModel.getInstance().getEmergencyLiveData().postValue(EMERGENCIES_LIST);
                 }
 
                 @Override
