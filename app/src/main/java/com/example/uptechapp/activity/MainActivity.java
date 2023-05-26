@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -30,14 +29,12 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String TAG = "MainActivity11";
-
     private RecyclerView emergencyFeed;
     private Dialog progressBar;
     private TextView dialogText;
 
-    private List<Emergency> myEmergencyList;
-    private EmergencyAdapter adapter;
+    List<Emergency> myEmergencyList;
+    EmergencyAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,8 +61,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void OnFailure() {
                 progressBar.dismiss();
+
             }
         });
+
         final Observer<List<Emergency>> myObserver = new Observer<List<Emergency>>() {
             @Override
             public void onChanged(List<Emergency> emergencies) {
@@ -79,8 +78,6 @@ public class MainActivity extends AppCompatActivity {
         MyViewModel.getInstance().getEmergencyLiveData().observe(this, myObserver);
 //        MyViewModel.getInstance().getEmergencyLiveData().getValue();
 
-
-
     }
 
     private void init() {
@@ -92,16 +89,22 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.nav_feed:
+                        Toast.makeText(MainActivity.this, "Feed", Toast.LENGTH_SHORT).show();
+//                        setFragment(new CategoryFragment());
                         Intent intent = new Intent(MainActivity.this, MainActivity.class);
                         startActivity(intent);
                         return true;
 
                     case R.id.nav_create:
+                        Toast.makeText(MainActivity.this, "Create", Toast.LENGTH_SHORT).show();
+//                        setFragment(new LeaderBordFragment());
                         intent = new Intent(MainActivity.this, CreateActivity.class);
                         startActivity(intent);
                         return true;
 
                     case R.id.nav_map:
+                        Toast.makeText(MainActivity.this, "MAP", Toast.LENGTH_SHORT).show();
+//                        setFragment(new AccountFragment());
                         intent = new Intent(MainActivity.this, MapActivity.class);
                         startActivity(intent);
 
