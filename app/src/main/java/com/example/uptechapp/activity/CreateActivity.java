@@ -1,11 +1,17 @@
 package com.example.uptechapp.activity;
 
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
+import android.Manifest;
+import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
@@ -25,7 +31,10 @@ import com.example.uptechapp.R;
 import com.example.uptechapp.api.EmergencyApiService;
 import com.example.uptechapp.api.ListenerLocation;
 import com.example.uptechapp.api.MyLocationListener;
+import com.example.uptechapp.dao.MapService;
 import com.example.uptechapp.model.Emergency;
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -53,14 +62,81 @@ public class CreateActivity extends AppCompatActivity {
     private Uri uriImage;
     private StorageReference storageReference;
     private static final int PICK_IMAGE_REQUEST = 1;
+    ActivityResultLauncher<String[]> locationPermissionRequest;
+    public static Double longitude;
+    public static Double latitude;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create);
 
+        locationPermissionRequest =
+                registerForActivityResult(new ActivityResultContracts
+                                .RequestMultiplePermissions(), result -> {
+                            Boolean fineLocationGranted = result.getOrDefault(
+                                    Manifest.permission.ACCESS_FINE_LOCATION, false);
+                            Boolean coarseLocationGranted = result.getOrDefault(
+                                    Manifest.permission.ACCESS_COARSE_LOCATION, false);
+                            if (fineLocationGranted != null && fineLocationGranted) {
+                                // Precise location access granted.
+                                Toast.makeText(this, "Precise location access granted", Toast.LENGTH_SHORT).show();
+                            } else if (coarseLocationGranted != null && coarseLocationGranted) {
+                                //
+                                Toast.makeText(this, "Only approximate location access granted.", Toast.LENGTH_SHORT).show();
+                            } else {
+                                //
+                                Toast.makeText(this, "No location access granted. Denied", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                );
+
+        if (!checkLoc()) {
+            locationPermissionRequest.launch(new String[]{
+                    Manifest.permission.ACCESS_FINE_LOCATION,
+                    Manifest.permission.ACCESS_COARSE_LOCATION
+            });
+        }
+
+
+        Log.d("NIKITAQ", "STARTED");
+        FusedLocationProviderClient fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
+
+        checkLoc();
+
+        if (!checkLoc()) {
+            return;
+        }
+        if (ActivityCompat.checkSelfPermission((Activity) this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission((Activity) this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            return;
+        }
+        fusedLocationClient.getLastLocation()
+                .addOnSuccessListener((Activity) this, new OnSuccessListener<Location>() {
+                    @Override
+                    public void onSuccess(Location location) {
+                        // Got last known location. In some rare situations this can be null.
+                        if (location != null) {
+                            latitude = location.getLatitude();
+                            longitude = location.getLongitude();
+                        }
+                    }
+                });
+
         init();
 
+    }
+
+    boolean checkLoc(){
+        return ActivityCompat.checkSelfPermission((Activity) this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED ||
+                ActivityCompat.checkSelfPermission((Activity) this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED;
+    }
+
+    public static Double getLongitude() {
+        return longitude;
+    }
+
+    public static Double getLatitude() {
+        return latitude;
     }
 
     private void init() {
@@ -156,6 +232,7 @@ public class CreateActivity extends AppCompatActivity {
                             String url = downloadUri.toString();
                             String[] time = Calendar.getInstance().getTime().toString().split(" ");
                             Log.i("time", "Time" + Arrays.toString(time));
+                            Log.i(TAG, "onSuccess: " + MyLocationListener.getLongitude() + " " + MyLocationListener.getLatitude());
 
                             Emergency emergency = new Emergency(
                                     "-1",
@@ -163,8 +240,8 @@ public class CreateActivity extends AppCompatActivity {
                                     emergencyDescription.getText().toString(),
                                     Calendar.getInstance().getTime().toString(),
                                     url,
-                                    104,
-                                    60
+                                    getLatitude(),
+                                    getLongitude()
                             );
 
                             EmergencyApiService.getInstance().postJson(emergency).enqueue(new Callback<Emergency>() {

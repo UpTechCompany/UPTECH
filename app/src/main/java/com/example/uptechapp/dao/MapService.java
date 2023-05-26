@@ -78,16 +78,6 @@ public class MapService implements OnMapReadyCallback, GoogleMap.OnMapClickListe
                 + latLng.longitude, Toast.LENGTH_SHORT).show();
     }
 
-//    @Override
-//    public void onLocationChanged(Location location) {
-//        double latitude = location.getLatitude();
-//        double longitude = location.getLongitude();
-//        Toast.makeText(context, "Latitude: " + latitude + ", Longitude: " + longitude, Toast.LENGTH_SHORT).show();
-//    }
-
-
-
-
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
         Log.d(TAG, "onMapReady: READY");
@@ -95,29 +85,16 @@ public class MapService implements OnMapReadyCallback, GoogleMap.OnMapClickListe
         googleMap.setOnMapLongClickListener(this);
         List<Emergency> myEmergencyList = MyViewModel.getInstance().getEmergencyLiveData().getValue();
         Log.i("qq", "myEmergencyList" + myEmergencyList.toString());
-        Database.loadEmergencies(new CompleteListener() {
-            @Override
-            public void OnSuccess() {
-
-            }
-
-            @Override
-            public void OnFailure() {
-
-            }
-        });
 
         Log.d(TAG, "onMapReady: check before load emergencies");
 
                 Log.i(TAG, "OnSuccess: " + myEmergencyList.toString());
                 for (Emergency emergency: myEmergencyList) {
+                    emergency.setLocation(emergency.getLattitude(), emergency.getLongitude());
+                    Log.i(TAG, "emergency" + emergency.toString());
                     googleMap.addMarker(new MarkerOptions().position(emergency.getLocation()).title(emergency.getTitle()));
                     Log.d(TAG, "OnSuccess: add emergency");
                 }
-//                for (Emergency emergency: Database.EMERGENCIES_LIST_FAKE) {
-//                    googleMap.addMarker(new MarkerOptions().position(emergency.getLocation()).title(emergency.getTitle()));
-//                }
-//                Log.d(TAG, "OnSuccess: mejdu");
 
                 googleMap.setOnMarkerClickListener(marker -> {
                     Log.d(TAG, "OnSuccess: markerclicklistener");
@@ -143,12 +120,6 @@ public class MapService implements OnMapReadyCallback, GoogleMap.OnMapClickListe
                     ImageView imageView = dialog.getWindow().findViewById(R.id.iv_image);
                     StorageReference reference = FirebaseStorage.getInstance().getReference(emergency.getPhotoUrl());
                     Glide.with(context).load(reference).into(imageView);
-//                    reference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-//                        @Override
-//                        public void onSuccess(Uri uri) {
-//                            Glide.with(context).load(uri).into(imageView);
-//                        }
-//                    });
 
                     return false;
                 });

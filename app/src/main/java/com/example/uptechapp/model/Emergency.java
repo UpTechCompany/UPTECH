@@ -74,8 +74,16 @@ public class Emergency {
         return location;
     }
 
-    public void setLocation(LatLng location) {
-        this.location = location;
+    public Double getLattitude(){
+        return latitude;
+    }
+
+    public Double getLongitude(){
+        return longitude;
+    }
+
+    public void setLocation(double latitude, double longitude) {
+        this.location = new LatLng(latitude, longitude);
     }
 
     @Override
