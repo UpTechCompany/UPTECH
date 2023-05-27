@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:app="http://schemas.android.com/apk/res/android"
-    app:shape="rectangle">
+    xmlns:tools="http://schemas.android.com/tools"
+    app:shape="rectangle"
+    tools:ignore="NamespaceTypo">
     <corners
         app:radius="50dp"/>
 </shape>
