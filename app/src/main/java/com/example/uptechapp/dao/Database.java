@@ -5,7 +5,6 @@ import android.util.Log;
 
 import androidx.annotation.NonNull;
 
-import com.example.uptechapp.MyViewModel;
 import com.example.uptechapp.api.CompleteListener;
 import com.example.uptechapp.api.EmergencyApiService;
 import com.example.uptechapp.model.Emergency;

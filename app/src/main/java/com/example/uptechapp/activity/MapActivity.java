@@ -2,23 +2,14 @@ package com.example.uptechapp.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.Observer;
 
-import android.Manifest;
-import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.location.Location;
-import android.location.LocationManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
-import android.widget.Toast;
 
-import com.example.uptechapp.MyViewModel;
+import com.example.uptechapp.dao.MyViewModel;
 import com.example.uptechapp.api.CompleteListener;
 import com.example.uptechapp.dao.Database;
 import com.example.uptechapp.dao.MapService;

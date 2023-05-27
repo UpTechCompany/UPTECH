@@ -12,10 +12,7 @@ import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.location.Address;
-import android.location.Geocoder;
 import android.location.Location;
-import android.location.LocationListener;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
@@ -29,9 +26,6 @@ import android.widget.Toast;
 
 import com.example.uptechapp.R;
 import com.example.uptechapp.api.EmergencyApiService;
-import com.example.uptechapp.api.ListenerLocation;
-import com.example.uptechapp.api.MyLocationListener;
-import com.example.uptechapp.dao.MapService;
 import com.example.uptechapp.model.Emergency;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
@@ -42,13 +36,9 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
-import java.io.IOException;
 import java.util.Arrays;
 import java.util.Calendar;
-import java.util.List;
-import java.util.Locale;
 
-import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -98,8 +88,6 @@ public class CreateActivity extends AppCompatActivity {
             });
         }
 
-
-        Log.d("NIKITAQ", "STARTED");
         FusedLocationProviderClient fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
 
         checkLoc();
@@ -232,7 +220,6 @@ public class CreateActivity extends AppCompatActivity {
                             String url = downloadUri.toString();
                             String[] time = Calendar.getInstance().getTime().toString().split(" ");
                             Log.i("time", "Time" + Arrays.toString(time));
-                            Log.i(TAG, "onSuccess: " + MyLocationListener.getLongitude() + " " + MyLocationListener.getLatitude());
 
                             Emergency emergency = new Emergency(
                                     "-1",

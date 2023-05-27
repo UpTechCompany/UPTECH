@@ -1,4 +1,4 @@
-package com.example.uptechapp;
+package com.example.uptechapp.dao;
 
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;

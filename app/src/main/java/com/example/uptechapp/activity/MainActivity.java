@@ -11,12 +11,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.uptechapp.MyViewModel;
+import com.example.uptechapp.dao.MyViewModel;
 import com.example.uptechapp.api.CompleteListener;
 import com.example.uptechapp.dao.Database;
 import com.example.uptechapp.dao.EmergencyAdapter;
@@ -89,22 +88,16 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.nav_feed:
-                        Toast.makeText(MainActivity.this, "Feed", Toast.LENGTH_SHORT).show();
-//                        setFragment(new CategoryFragment());
                         Intent intent = new Intent(MainActivity.this, MainActivity.class);
                         startActivity(intent);
                         return true;
 
                     case R.id.nav_create:
-                        Toast.makeText(MainActivity.this, "Create", Toast.LENGTH_SHORT).show();
-//                        setFragment(new LeaderBordFragment());
                         intent = new Intent(MainActivity.this, CreateActivity.class);
                         startActivity(intent);
                         return true;
 
                     case R.id.nav_map:
-                        Toast.makeText(MainActivity.this, "MAP", Toast.LENGTH_SHORT).show();
-//                        setFragment(new AccountFragment());
                         intent = new Intent(MainActivity.this, MapActivity.class);
                         startActivity(intent);
 
