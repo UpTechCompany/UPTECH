@@ -2,21 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/nav_feed"
+        android:id="@+id/fragment_emergency_feed"
         android:icon="@drawable/news_feed"
-        android:title="News"
+        android:title="@string/news"
         />
 
     <item
-        android:id="@+id/nav_create"
-        android:icon="@drawable/create_news"
-        android:title="Create"
-
-        />
-
-    <item
-        android:id="@+id/nav_map"
+        android:id="@+id/fragment_map"
         android:icon="@drawable/map"
-        android:title="Map"/>
+        android:title="@string/map"/>
 
 </menu>

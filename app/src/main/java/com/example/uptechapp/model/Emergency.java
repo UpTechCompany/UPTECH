@@ -9,6 +9,7 @@ import java.util.SimpleTimeZone;
 
 public class Emergency {
     private String id;
+    private String email;
     private String photoUrl;
     private String title;
     private String description;
@@ -18,16 +19,16 @@ public class Emergency {
     private LatLng location;
 
 
-    public Emergency(String id, String title, String description, String time, String photoUrl, double latitude, double longitude) {
+    public Emergency(String id, String email, String title, String description, String time, String photoUrl, double latitude, double longitude) {
         this.id = id;
-        this.photoUrl = photoUrl;
+        this.email = email;
         this.title = title;
         this.description = description;
         this.time = time;
+        this.photoUrl = photoUrl;
         this.latitude = latitude;
         this.longitude = longitude;
         this.location = new LatLng(this.latitude, this.longitude);
-        Log.d("TENSHI", "Emergency: " + location);
     }
 
     public String getId() {
@@ -90,6 +91,7 @@ public class Emergency {
     public String toString() {
         return "Emergency{" +
                 "id='" + id + '\'' +
+                ", email='" + email + '\'' +
                 ", photoUrl='" + photoUrl + '\'' +
                 ", title='" + title + '\'' +
                 ", description='" + description + '\'' +

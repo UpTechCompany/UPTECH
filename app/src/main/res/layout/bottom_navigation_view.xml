@@ -12,8 +12,8 @@
         android:layout_marginTop="8dp"
         android:background="@drawable/round_view"
         android:elevation="5dp"
-        app:itemIconTint="@color/design_default_color_primary"
-        app:itemTextColor="@color/design_default_color_primary"
+        app:itemIconTint="#5D57FF"
+        app:itemTextColor="#5D57FF"
         app:menu="@menu/bottom_menu" />
 
 </LinearLayout>

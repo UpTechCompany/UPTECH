@@ -21,11 +21,10 @@
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             android:layout_weight="1"
-            android:indeterminateTint="@color/design_default_color_primary"
+            android:indeterminateTint="#5D57FF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            style="?android:attr/progressBarStyle"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/dialogText"
@@ -37,7 +36,7 @@
             android:textSize="18sp"
             android:layout_weight="1"
             android:gravity="center"
-            android:textColor="@color/design_default_color_primary"
+            android:textColor="#5D57FF"
             android:paddingRight="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/progressBar"
