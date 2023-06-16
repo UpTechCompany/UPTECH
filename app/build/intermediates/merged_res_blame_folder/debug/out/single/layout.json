@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-mergeDebugResources-55:\\layout\\dialog_layout.xml",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\layout\\dialog_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-mergeDebugResources-55:\\layout\\fragment_emergency_feed.xml",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\layout\\fragment_emergency_feed.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-mergeDebugResources-55:\\layout\\dialog_fragment.xml",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\layout\\dialog_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-mergeDebugResources-55:\\layout\\fragment_create_emergency.xml",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\layout\\fragment_create_emergency.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-mergeDebugResources-55:\\layout\\bottom_navigation_view.xml",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\layout\\bottom_navigation_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-mergeDebugResources-55:\\layout\\activity_main_fragments.xml",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\layout\\activity_main_fragments.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-mergeDebugResources-55:/layout/fragment_login.xml",
+        "source": "com.example.uptechapp-main-58:/layout/fragment_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-mergeDebugResources-55:\\layout\\learning.xml",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\layout\\learning.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-mergeDebugResources-55:\\layout\\item_emergency.xml",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\layout\\item_emergency.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-mergeDebugResources-55:\\layout\\fragment_map.xml",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\layout\\fragment_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-mergeDebugResources-55:\\layout\\fragment_login.xml",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\layout\\fragment_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-mergeDebugResources-55:\\layout\\fragment_splash.xml",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\layout\\fragment_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-mergeDebugResources-55:\\layout\\lea.xml",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\layout\\lea.xml"
+    }
+]

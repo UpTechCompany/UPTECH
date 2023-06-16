@@ -1,0 +1,7 @@
+#Tue Jun 13 19:51:25 IRKT 2023
+base.0=C\:\\Users\\tenshi\\Documents\\Android Studio Projects\\LOOKOUT\\UptechApp-super\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+base.1=C\:\\Users\\tenshi\\Documents\\Android Studio Projects\\LOOKOUT\\UptechApp-super\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes2.dex
+path.0=classes.dex
+path.1=classes2.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex

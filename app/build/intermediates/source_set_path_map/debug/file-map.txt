@@ -1,0 +1,59 @@
+com.example.uptechapp-slidingpanelayout-1.2.0-0 C:\Users\tenshi\.gradle\caches\transforms-3\0bc677af8a0762d4747561a05fe17ba3\transformed\slidingpanelayout-1.2.0\res
+com.example.uptechapp-customview-poolingcontainer-1.0.0-1 C:\Users\tenshi\.gradle\caches\transforms-3\0cca764e39fd91506167d61717f65135\transformed\customview-poolingcontainer-1.0.0\res
+com.example.uptechapp-play-services-base-18.1.0-2 C:\Users\tenshi\.gradle\caches\transforms-3\10f2e9c048e004b0ea24d8924b27418a\transformed\play-services-base-18.1.0\res
+com.example.uptechapp-appcompat-resources-1.6.1-3 C:\Users\tenshi\.gradle\caches\transforms-3\118f2de81b489f42cc82e0b38f91390e\transformed\appcompat-resources-1.6.1\res
+com.example.uptechapp-play-services-auth-20.5.0-4 C:\Users\tenshi\.gradle\caches\transforms-3\1b28615a0f9355c99b8f5cff5b83f424\transformed\play-services-auth-20.5.0\res
+com.example.uptechapp-appcompat-1.6.1-5 C:\Users\tenshi\.gradle\caches\transforms-3\1da554706608870f04d87ccd7be82bd3\transformed\appcompat-1.6.1\res
+com.example.uptechapp-lifecycle-viewmodel-ktx-2.5.1-6 C:\Users\tenshi\.gradle\caches\transforms-3\1dc50b5660497b256fc78529def1940d\transformed\lifecycle-viewmodel-ktx-2.5.1\res
+com.example.uptechapp-activity-ktx-1.6.0-7 C:\Users\tenshi\.gradle\caches\transforms-3\203d07abf9a1324b41af423399b159ec\transformed\activity-ktx-1.6.0\res
+com.example.uptechapp-material-1.9.0-8 C:\Users\tenshi\.gradle\caches\transforms-3\2ad10b89c4ca36482a80e3ee495930ad\transformed\material-1.9.0\res
+com.example.uptechapp-window-1.0.0-9 C:\Users\tenshi\.gradle\caches\transforms-3\2d50a1810f55a5a1d4994048def33732\transformed\window-1.0.0\res
+com.example.uptechapp-fragment-ktx-1.5.4-10 C:\Users\tenshi\.gradle\caches\transforms-3\3133461cc0a8334b888ca367f2a410e7\transformed\fragment-ktx-1.5.4\res
+com.example.uptechapp-lifecycle-runtime-2.5.1-11 C:\Users\tenshi\.gradle\caches\transforms-3\37bebee88f98d25775ddf020a9386edc\transformed\lifecycle-runtime-2.5.1\res
+com.example.uptechapp-swiperefreshlayout-1.2.0-alpha01-12 C:\Users\tenshi\.gradle\caches\transforms-3\3aa141f354ebc4f9f9053d0b0c28a038\transformed\swiperefreshlayout-1.2.0-alpha01\res
+com.example.uptechapp-savedstate-ktx-1.2.0-13 C:\Users\tenshi\.gradle\caches\transforms-3\3dde1ecacc1f842e1fe392892263d0c0\transformed\savedstate-ktx-1.2.0\res
+com.example.uptechapp-transition-1.4.1-14 C:\Users\tenshi\.gradle\caches\transforms-3\427fffa7d225e23b6ea6915d86168683\transformed\transition-1.4.1\res
+com.example.uptechapp-media-1.6.0-15 C:\Users\tenshi\.gradle\caches\transforms-3\43735a4d6d2000debe1f6e2a534a34c8\transformed\media-1.6.0\res
+com.example.uptechapp-lifecycle-process-2.4.1-16 C:\Users\tenshi\.gradle\caches\transforms-3\4693a733fc1099851f6631f3c9402d9e\transformed\lifecycle-process-2.4.1\res
+com.example.uptechapp-media3-exoplayer-1.1.0-beta01-17 C:\Users\tenshi\.gradle\caches\transforms-3\4af62d8bd15f0ba38e8009f7c01b9714\transformed\media3-exoplayer-1.1.0-beta01\res
+com.example.uptechapp-core-ktx-1.9.0-18 C:\Users\tenshi\.gradle\caches\transforms-3\4cad2fc797b88a6599bb23c76aeee812\transformed\core-ktx-1.9.0\res
+com.example.uptechapp-drawerlayout-1.1.1-19 C:\Users\tenshi\.gradle\caches\transforms-3\4f32941a76d2dd5d24322c6933ceb419\transformed\drawerlayout-1.1.1\res
+com.example.uptechapp-navigation-fragment-ktx-2.5.3-20 C:\Users\tenshi\.gradle\caches\transforms-3\4ffe27166cdc49574b4fb601a8894d81\transformed\navigation-fragment-ktx-2.5.3\res
+com.example.uptechapp-emoji2-views-helper-1.2.0-21 C:\Users\tenshi\.gradle\caches\transforms-3\5573f43054ac8bd00b43e89cf08938b7\transformed\emoji2-views-helper-1.2.0\res
+com.example.uptechapp-lifecycle-runtime-ktx-2.5.1-22 C:\Users\tenshi\.gradle\caches\transforms-3\57bc798e8db0a52e2a89e180ca125031\transformed\lifecycle-runtime-ktx-2.5.1\res
+com.example.uptechapp-firebase-common-20.3.2-23 C:\Users\tenshi\.gradle\caches\transforms-3\5cce5683de8eb199c6cfe65be0159d80\transformed\firebase-common-20.3.2\res
+com.example.uptechapp-navigation-ui-2.5.3-24 C:\Users\tenshi\.gradle\caches\transforms-3\60aed56fad10b40de333300be2a19ce7\transformed\navigation-ui-2.5.3\res
+com.example.uptechapp-navigation-common-ktx-2.5.3-25 C:\Users\tenshi\.gradle\caches\transforms-3\61724582193807e6201c031401d7e932\transformed\navigation-common-ktx-2.5.3\res
+com.example.uptechapp-savedstate-1.2.0-26 C:\Users\tenshi\.gradle\caches\transforms-3\66ac466f20b74f483a12f065a14dcf95\transformed\savedstate-1.2.0\res
+com.example.uptechapp-lifecycle-viewmodel-2.5.1-27 C:\Users\tenshi\.gradle\caches\transforms-3\68b45814bea1b2feef1c88c5baa6e8c5\transformed\lifecycle-viewmodel-2.5.1\res
+com.example.uptechapp-activity-1.6.0-28 C:\Users\tenshi\.gradle\caches\transforms-3\7673fdb9544cb553185dc5b6e75c8c35\transformed\activity-1.6.0\res
+com.example.uptechapp-core-1.9.0-29 C:\Users\tenshi\.gradle\caches\transforms-3\77f8a7099b82995f12bd33e6a20ed983\transformed\core-1.9.0\res
+com.example.uptechapp-annotation-experimental-1.3.0-30 C:\Users\tenshi\.gradle\caches\transforms-3\8257aba9fa483d6fa3be310fe505d28e\transformed\annotation-experimental-1.3.0\res
+com.example.uptechapp-play-services-maps-18.1.0-31 C:\Users\tenshi\.gradle\caches\transforms-3\972cb50d050b095ea11337ca7e276275\transformed\play-services-maps-18.1.0\res
+com.example.uptechapp-media3-ui-1.1.0-beta01-32 C:\Users\tenshi\.gradle\caches\transforms-3\98ca3fc35d25ca9e5fb76a5043781ec8\transformed\media3-ui-1.1.0-beta01\res
+com.example.uptechapp-lifecycle-viewmodel-savedstate-2.5.1-33 C:\Users\tenshi\.gradle\caches\transforms-3\9c7efab30fbfc903ec998fc2c89ff7fb\transformed\lifecycle-viewmodel-savedstate-2.5.1\res
+com.example.uptechapp-glide-4.15.1-34 C:\Users\tenshi\.gradle\caches\transforms-3\9d6384d1dd966d31f107a6beec49b70d\transformed\glide-4.15.1\res
+com.example.uptechapp-constraintlayout-2.1.4-35 C:\Users\tenshi\.gradle\caches\transforms-3\9dda126fe2af4397f95abc6c95f1131d\transformed\constraintlayout-2.1.4\res
+com.example.uptechapp-navigation-fragment-2.5.3-36 C:\Users\tenshi\.gradle\caches\transforms-3\a209d78dc209eaddd75e94be1d43223c\transformed\navigation-fragment-2.5.3\res
+com.example.uptechapp-recyclerview-1.3.0-37 C:\Users\tenshi\.gradle\caches\transforms-3\a30c2c04521a0f4081c93a94fe232b84\transformed\recyclerview-1.3.0\res
+com.example.uptechapp-navigation-ui-ktx-2.5.3-38 C:\Users\tenshi\.gradle\caches\transforms-3\a64da4bf3bf2140be915498a01d83a20\transformed\navigation-ui-ktx-2.5.3\res
+com.example.uptechapp-navigation-runtime-ktx-2.5.3-39 C:\Users\tenshi\.gradle\caches\transforms-3\bc271107fc062c0623f12882088baf30\transformed\navigation-runtime-ktx-2.5.3\res
+com.example.uptechapp-lifecycle-livedata-core-2.5.1-40 C:\Users\tenshi\.gradle\caches\transforms-3\bc494a361561b60728eb0d192c66ed49\transformed\lifecycle-livedata-core-2.5.1\res
+com.example.uptechapp-emoji2-1.2.0-41 C:\Users\tenshi\.gradle\caches\transforms-3\c921a9c2b23da2fab8c5f551cb6f587e\transformed\emoji2-1.2.0\res
+com.example.uptechapp-cardview-1.0.0-42 C:\Users\tenshi\.gradle\caches\transforms-3\d7329909da325201008579ed0cdeef96\transformed\cardview-1.0.0\res
+com.example.uptechapp-fragment-1.5.4-43 C:\Users\tenshi\.gradle\caches\transforms-3\df4082da7a2512cbf94571d7bc16ed4d\transformed\fragment-1.5.4\res
+com.example.uptechapp-lifecycle-livedata-core-ktx-2.5.1-44 C:\Users\tenshi\.gradle\caches\transforms-3\e22803134c9c9bfb06d07fc29e904053\transformed\lifecycle-livedata-core-ktx-2.5.1\res
+com.example.uptechapp-viewpager2-1.0.0-45 C:\Users\tenshi\.gradle\caches\transforms-3\e51811b5650ad308c14d2d42369c1372\transformed\viewpager2-1.0.0\res
+com.example.uptechapp-play-services-basement-18.2.0-46 C:\Users\tenshi\.gradle\caches\transforms-3\f05eeeee9cea9dc816a1052e8ef2a67d\transformed\play-services-basement-18.2.0\res
+com.example.uptechapp-coordinatorlayout-1.1.0-47 C:\Users\tenshi\.gradle\caches\transforms-3\f0c245fba4f46d87c37d5f40ae770b91\transformed\coordinatorlayout-1.1.0\res
+com.example.uptechapp-startup-runtime-1.1.1-48 C:\Users\tenshi\.gradle\caches\transforms-3\f2baaa91cb40dabc05f327dad2fdefba\transformed\startup-runtime-1.1.1\res
+com.example.uptechapp-navigation-runtime-2.5.3-49 C:\Users\tenshi\.gradle\caches\transforms-3\fc6496dadc59796e8e739cf470cf7cba\transformed\navigation-runtime-2.5.3\res
+com.example.uptechapp-navigation-common-2.5.3-50 C:\Users\tenshi\.gradle\caches\transforms-3\ff96cf1907fcd4b5edc5b695ee3ca948\transformed\navigation-common-2.5.3\res
+com.example.uptechapp-google-services-51 C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\build\generated\res\google-services\debug
+com.example.uptechapp-pngs-52 C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\build\generated\res\pngs\debug
+com.example.uptechapp-resValues-53 C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\build\generated\res\resValues\debug
+com.example.uptechapp-packageDebugResources-54 C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.uptechapp-packageDebugResources-55 C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.uptechapp-merged_res-56 C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\build\intermediates\merged_res\debug
+com.example.uptechapp-debug-57 C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\debug\res
+com.example.uptechapp-main-58 C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\res

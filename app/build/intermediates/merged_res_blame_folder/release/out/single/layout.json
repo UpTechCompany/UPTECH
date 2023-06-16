@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "com.example.uptechapp-mergeReleaseResources-55:/layout/fragment_map.xml",
+        "source": "com.example.uptechapp-main-57:/layout/fragment_map.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-mergeReleaseResources-55:/layout/learning.xml",
+        "source": "com.example.uptechapp-main-57:/layout/learning.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-mergeReleaseResources-55:/layout/fragment_login.xml",
+        "source": "com.example.uptechapp-main-57:/layout/fragment_login.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-mergeReleaseResources-55:/layout/bottom_navigation_view.xml",
+        "source": "com.example.uptechapp-main-57:/layout/bottom_navigation_view.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-mergeReleaseResources-55:/layout/fragment_create_emergency.xml",
+        "source": "com.example.uptechapp-main-57:/layout/fragment_create_emergency.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-mergeReleaseResources-55:/layout/fragment_splash.xml",
+        "source": "com.example.uptechapp-main-57:/layout/fragment_splash.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-mergeReleaseResources-55:/layout/dialog_layout.xml",
+        "source": "com.example.uptechapp-main-57:/layout/dialog_layout.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-mergeReleaseResources-55:/layout/dialog_fragment.xml",
+        "source": "com.example.uptechapp-main-57:/layout/dialog_fragment.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-mergeReleaseResources-55:/layout/item_emergency.xml",
+        "source": "com.example.uptechapp-main-57:/layout/item_emergency.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-mergeReleaseResources-55:/layout/activity_main_fragments.xml",
+        "source": "com.example.uptechapp-main-57:/layout/activity_main_fragments.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-mergeReleaseResources-55:/layout/lea.xml",
+        "source": "com.example.uptechapp-main-57:/layout/lea.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-mergeReleaseResources-55:/layout/fragment_emergency_feed.xml",
+        "source": "com.example.uptechapp-main-57:/layout/fragment_emergency_feed.xml"
+    }
+]

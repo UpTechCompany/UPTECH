@@ -1,0 +1,222 @@
+[
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\drawable_img_logo.png.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\drawable\\img_logo.png"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/layout_fragment_login.xml.flat",
+        "source": "com.example.uptechapp-main-58:/layout/fragment_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\drawable_learn1_en.gif.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\drawable\\learn1_en.gif"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\layout_fragment_emergency_feed.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\layout\\fragment_emergency_feed.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\drawable_learn3_en.gif.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\drawable\\learn3_en.gif"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\drawable_learn2_ru.gif.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\drawable\\learn2_ru.gif"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\layout_bottom_navigation_view.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\layout\\bottom_navigation_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\drawable_rounded_rectangle.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\drawable\\rounded_rectangle.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\drawable_gradient_background.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\drawable\\gradient_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\drawable_ellipse.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\drawable\\ellipse.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\drawable_map.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\drawable\\map.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\menu_bottom_menu.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\menu\\bottom_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\drawable_launch_logo.png.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\drawable\\launch_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\layout_learning.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\layout\\learning.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\drawable_round_view.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\drawable\\round_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\drawable_ic_label.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\drawable\\ic_label.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\drawable_fill.png.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\drawable\\fill.png"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\layout_item_emergency.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\layout\\item_emergency.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\layout_lea.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\layout\\lea.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\drawable_ugli.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\drawable\\ugli.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\layout_activity_main_fragments.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\layout\\activity_main_fragments.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\drawable_gosuslugi.png.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\drawable\\gosuslugi.png"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\layout_dialog_layout.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\layout\\dialog_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\layout_fragment_map.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\layout\\fragment_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\layout_fragment_splash.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\layout\\fragment_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\drawable_round_corner_btn.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\drawable\\round_corner_btn.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\drawable_learn2_en.gif.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\drawable\\learn2_en.gif"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\navigation\\nav_graph.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\layout_fragment_login.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\layout\\fragment_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\drawable_learn3_ru.gif.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\drawable\\learn3_ru.gif"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\layout_dialog_fragment.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\layout\\dialog_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\mipmap-anydpi-v33_ic_launcher.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\mipmap-anydpi-v33\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\drawable_learn1_ru.gif.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\drawable\\learn1_ru.gif"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\drawable_emergency_item_background.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\drawable\\emergency_item_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\layout_fragment_create_emergency.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\layout\\fragment_create_emergency.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\drawable_create_news.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\drawable\\create_news.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\drawable_ic_google_logo.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\drawable\\ic_google_logo.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\drawable_news_feed.xml.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\drawable\\news_feed.xml"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\font_abbieshire.ttf.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\font\\abbieshire.ttf"
+    },
+    {
+        "merged": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-merged_res-56:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\tenshi\\.gradle\\daemon\\8.0\\com.example.uptechapp-main-58:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    }
+]

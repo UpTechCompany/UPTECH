@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="dark_gray_figma">#1E1E1E</color>
+    <color name="gray_figma">#BABABA</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="light_gray_figma">#BABABA</color>
+    <color name="medium_dark_gray_figma">#494949</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="purple_figma">#8640BD</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name" translatable="false">UptechApp</string>
+    <string name="choose_picture" translatable="true">Выберите картинку</string>
+    <string name="close" translatable="true">Закрыть</string>
+    <string name="create" translatable="true">Создание записи</string>
+    <string name="create_create" translatable="true">Создание записи</string>
+    <string name="create_lable" translatable="true">Название</string>
+    <string name="default_web_client_id" translatable="false">573000313275-636b6r5sn8mob95rkder9r6tsoifdo2o.apps.googleusercontent.com</string>
+    <string name="default_web_client_id_google" translatable="false">573000313275-636b6r5sn8mob95rkder9r6tsoifdo2o.apps.googleusercontent.com</string>
+    <string name="description" translatable="true">Описание</string>
+    <string name="dummy_button" translatable="false">Dummy Button</string>
+    <string name="dummy_content" translatable="false">DUMMY\nCONTENT</string>
+    <string name="email">email</string>
+    <string name="gcm_defaultSenderId" translatable="false">573000313275</string>
+    <string name="google_api_key" translatable="false">AIzaSyDqm6XX4VNuSX8BvcDQ4kIGfsFI5jSJvWM</string>
+    <string name="google_app_id" translatable="false">1:573000313275:android:a8576b3a8d10d22346fc9e</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDqm6XX4VNuSX8BvcDQ4kIGfsFI5jSJvWM</string>
+    <string name="google_storage_bucket" translatable="false">lookout-386109.appspot.com</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="id_logging" translatable="false">IdLogged</string>
+    <string name="info" translatable="true">Информация</string>
+    <string name="learn" translatable="false">Learn</string>
+    <string name="load" translatable="true">Загрузка</string>
+    <string name="login_inf" translatable="true">* Нажав на кнопку, вы соглашаетесь предоставить ваши данные UpTech для обработки.</string>
+    <string name="map" translatable="true">Карта</string>
+    <string name="massage" translatable="true">Хотели бы вы пройти обучение по использованию приложения?</string>
+    <string name="name" translatable="true">Название</string>
+    <string name="news" translatable="true">Новости</string>
+    <string name="no" translatable="true">Нет</string>
+    <string name="progressBarLogging" translatable="false">Logging</string>
+    <string name="project_id" translatable="false">lookout-386109</string>
+    <string name="share_emergency" translatable="true">Поделиться записью</string>
+    <string name="sign_in_with_google" translatable="true">Вход Google Account</string>
+    <string name="time" translatable="true">Время</string>
+    <string name="title" translatable="true"><b>Заголовок</b></string>
+    <string name="todo" translatable="false">TODO</string>
+    <string name="training" translatable="true">Обучение</string>
+    <string name="verify_hint" translatable="true">Чтобы подтвердить свою личность, вам необходимо:</string>
+    <string name="yes" translatable="true">Да</string>
+    <style name="Theme.UptechApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        
+    </style>
+    <style name="ThemeOverlay.UptechApp.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
+        <item name="fullscreenTextColor">@color/light_blue_A200</item>
+    </style>
+    <style name="UpApp" parent="">
+        <item name="android:background">@color/white</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="android:backgroundTint">@color/white</item>
+    </style>
+    <style name="Widget.Theme.UptechApp.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/white</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+    <declare-styleable name="FullscreenAttrs">
+        <attr format="color" name="fullscreenBackgroundColor"/>
+        <attr format="color" name="fullscreenTextColor"/>
+    </declare-styleable>
+</resources>

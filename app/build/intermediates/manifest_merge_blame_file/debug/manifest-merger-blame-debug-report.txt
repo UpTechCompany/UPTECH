@@ -1,0 +1,225 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.uptechapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:6:5-81
+12-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:6:22-78
+13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+13-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:7:5-79
+13-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:7:22-76
+14    <uses-permission
+14-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:8:5-9:38
+15        android:name="android.permission.READ_EXTERNAL_STORAGE"
+15-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:8:22-77
+16        android:maxSdkVersion="32" />
+16-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:9:9-35
+17    <uses-permission android:name="INTERACT_ACROSS_USERS_FULL" />
+17-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:10:5-65
+17-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:10:22-63
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->[androidx.media3:media3-common:1.1.0-beta01] C:\Users\tenshi\.gradle\caches\transforms-3\85db5e3e8ae8a7e63c18e6bbfb9f691e\transformed\media3-common-1.1.0-beta01\AndroidManifest.xml:24:5-79
+18-->[androidx.media3:media3-common:1.1.0-beta01] C:\Users\tenshi\.gradle\caches\transforms-3\85db5e3e8ae8a7e63c18e6bbfb9f691e\transformed\media3-common-1.1.0-beta01\AndroidManifest.xml:24:22-76
+19
+20    <uses-feature
+20-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\tenshi\.gradle\caches\transforms-3\972cb50d050b095ea11337ca7e276275\transformed\play-services-maps-18.1.0\AndroidManifest.xml:26:5-28:35
+21        android:glEsVersion="0x00020000"
+21-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\tenshi\.gradle\caches\transforms-3\972cb50d050b095ea11337ca7e276275\transformed\play-services-maps-18.1.0\AndroidManifest.xml:27:9-41
+22        android:required="true" />
+22-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\tenshi\.gradle\caches\transforms-3\972cb50d050b095ea11337ca7e276275\transformed\play-services-maps-18.1.0\AndroidManifest.xml:28:9-32
+23
+24    <queries>
+24-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\tenshi\.gradle\caches\transforms-3\972cb50d050b095ea11337ca7e276275\transformed\play-services-maps-18.1.0\AndroidManifest.xml:30:5-34:15
+25
+26        <!-- Needs to be explicitly declared on Android R+ -->
+27        <package android:name="com.google.android.apps.maps" />
+27-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\tenshi\.gradle\caches\transforms-3\972cb50d050b095ea11337ca7e276275\transformed\play-services-maps-18.1.0\AndroidManifest.xml:33:9-64
+27-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\tenshi\.gradle\caches\transforms-3\972cb50d050b095ea11337ca7e276275\transformed\play-services-maps-18.1.0\AndroidManifest.xml:33:18-61
+28    </queries>
+29
+30    <permission
+30-->[androidx.core:core:1.9.0] C:\Users\tenshi\.gradle\caches\transforms-3\77f8a7099b82995f12bd33e6a20ed983\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+31        android:name="com.example.uptechapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+31-->[androidx.core:core:1.9.0] C:\Users\tenshi\.gradle\caches\transforms-3\77f8a7099b82995f12bd33e6a20ed983\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+32        android:protectionLevel="signature" />
+32-->[androidx.core:core:1.9.0] C:\Users\tenshi\.gradle\caches\transforms-3\77f8a7099b82995f12bd33e6a20ed983\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+33
+34    <uses-permission android:name="com.example.uptechapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+34-->[androidx.core:core:1.9.0] C:\Users\tenshi\.gradle\caches\transforms-3\77f8a7099b82995f12bd33e6a20ed983\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+34-->[androidx.core:core:1.9.0] C:\Users\tenshi\.gradle\caches\transforms-3\77f8a7099b82995f12bd33e6a20ed983\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+35
+36    <application
+36-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:12:5-37:19
+37        android:allowBackup="false"
+37-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:13:9-36
+38        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+38-->[androidx.core:core:1.9.0] C:\Users\tenshi\.gradle\caches\transforms-3\77f8a7099b82995f12bd33e6a20ed983\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+39        android:configChanges="uiMode"
+39-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:14:9-39
+40        android:dataExtractionRules="@xml/data_extraction_rules"
+40-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:16:9-65
+41        android:debuggable="true"
+42        android:extractNativeLibs="false"
+43        android:fullBackupContent="@xml/backup_rules"
+43-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:17:9-54
+44        android:hardwareAccelerated="true"
+44-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:15:9-43
+45        android:icon="@drawable/launch_logo"
+45-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:18:9-45
+46        android:label="@string/app_name"
+46-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:19:9-41
+47        android:supportsRtl="true"
+47-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:20:9-35
+48        android:testOnly="true"
+49        android:theme="@style/Theme.UptechApp"
+49-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:21:9-47
+50        android:usesCleartextTraffic="true" >
+50-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:22:9-44
+51        <meta-data
+51-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:25:9-27:71
+52            android:name="com.google.android.geo.API_KEY"
+52-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:26:13-58
+53            android:value="AIzaSyBXcvUYeyWNBqjOpkh_T4Mr5etm3kjtqTg" />
+53-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:27:13-68
+54
+55        <activity
+55-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:29:9-36:20
+56            android:name="com.example.uptechapp.activity.MainActivityFragments"
+56-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:30:13-59
+57            android:exported="true" >
+57-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:31:13-36
+58            <intent-filter>
+58-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:32:13-35:29
+59                <action android:name="android.intent.action.MAIN" />
+59-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:33:17-69
+59-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:33:25-66
+60
+61                <category android:name="android.intent.category.LAUNCHER" />
+61-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:34:17-77
+61-->C:\Users\tenshi\Documents\Android Studio Projects\LOOKOUT\UptechApp-super\app\src\main\AndroidManifest.xml:34:27-74
+62            </intent-filter>
+63        </activity>
+64        <activity
+64-->[com.google.android.gms:play-services-auth:20.5.0] C:\Users\tenshi\.gradle\caches\transforms-3\1b28615a0f9355c99b8f5cff5b83f424\transformed\play-services-auth-20.5.0\AndroidManifest.xml:23:9-27:75
+65            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+65-->[com.google.android.gms:play-services-auth:20.5.0] C:\Users\tenshi\.gradle\caches\transforms-3\1b28615a0f9355c99b8f5cff5b83f424\transformed\play-services-auth-20.5.0\AndroidManifest.xml:24:13-93
+66            android:excludeFromRecents="true"
+66-->[com.google.android.gms:play-services-auth:20.5.0] C:\Users\tenshi\.gradle\caches\transforms-3\1b28615a0f9355c99b8f5cff5b83f424\transformed\play-services-auth-20.5.0\AndroidManifest.xml:25:13-46
+67            android:exported="false"
+67-->[com.google.android.gms:play-services-auth:20.5.0] C:\Users\tenshi\.gradle\caches\transforms-3\1b28615a0f9355c99b8f5cff5b83f424\transformed\play-services-auth-20.5.0\AndroidManifest.xml:26:13-37
+68            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+68-->[com.google.android.gms:play-services-auth:20.5.0] C:\Users\tenshi\.gradle\caches\transforms-3\1b28615a0f9355c99b8f5cff5b83f424\transformed\play-services-auth-20.5.0\AndroidManifest.xml:27:13-72
+69        <!--
+70            Service handling Google Sign-In user revocation. For apps that do not integrate with
+71            Google Sign-In, this service will never be started.
+72        -->
+73        <service
+73-->[com.google.android.gms:play-services-auth:20.5.0] C:\Users\tenshi\.gradle\caches\transforms-3\1b28615a0f9355c99b8f5cff5b83f424\transformed\play-services-auth-20.5.0\AndroidManifest.xml:33:9-37:51
+74            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+74-->[com.google.android.gms:play-services-auth:20.5.0] C:\Users\tenshi\.gradle\caches\transforms-3\1b28615a0f9355c99b8f5cff5b83f424\transformed\play-services-auth-20.5.0\AndroidManifest.xml:34:13-89
+75            android:exported="true"
+75-->[com.google.android.gms:play-services-auth:20.5.0] C:\Users\tenshi\.gradle\caches\transforms-3\1b28615a0f9355c99b8f5cff5b83f424\transformed\play-services-auth-20.5.0\AndroidManifest.xml:35:13-36
+76            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+76-->[com.google.android.gms:play-services-auth:20.5.0] C:\Users\tenshi\.gradle\caches\transforms-3\1b28615a0f9355c99b8f5cff5b83f424\transformed\play-services-auth-20.5.0\AndroidManifest.xml:36:13-107
+77            android:visibleToInstantApps="true" /> <!-- Needs to be explicitly declared on P+ -->
+77-->[com.google.android.gms:play-services-auth:20.5.0] C:\Users\tenshi\.gradle\caches\transforms-3\1b28615a0f9355c99b8f5cff5b83f424\transformed\play-services-auth-20.5.0\AndroidManifest.xml:37:13-48
+78        <uses-library
+78-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\tenshi\.gradle\caches\transforms-3\972cb50d050b095ea11337ca7e276275\transformed\play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
+79            android:name="org.apache.http.legacy"
+79-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\tenshi\.gradle\caches\transforms-3\972cb50d050b095ea11337ca7e276275\transformed\play-services-maps-18.1.0\AndroidManifest.xml:40:13-50
+80            android:required="false" />
+80-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\tenshi\.gradle\caches\transforms-3\972cb50d050b095ea11337ca7e276275\transformed\play-services-maps-18.1.0\AndroidManifest.xml:41:13-37
+81
+82        <service
+82-->[com.google.firebase:firebase-storage:20.2.0] C:\Users\tenshi\.gradle\caches\transforms-3\867ac3c452700bc611ebc754905ad183\transformed\firebase-storage-20.2.0\AndroidManifest.xml:29:9-35:19
+83            android:name="com.google.firebase.components.ComponentDiscoveryService"
+83-->[com.google.firebase:firebase-storage:20.2.0] C:\Users\tenshi\.gradle\caches\transforms-3\867ac3c452700bc611ebc754905ad183\transformed\firebase-storage-20.2.0\AndroidManifest.xml:30:13-84
+84            android:directBootAware="true"
+84-->[com.google.firebase:firebase-common:20.3.2] C:\Users\tenshi\.gradle\caches\transforms-3\5cce5683de8eb199c6cfe65be0159d80\transformed\firebase-common-20.3.2\AndroidManifest.xml:34:13-43
+85            android:exported="false" >
+85-->[com.google.firebase:firebase-storage:20.2.0] C:\Users\tenshi\.gradle\caches\transforms-3\867ac3c452700bc611ebc754905ad183\transformed\firebase-storage-20.2.0\AndroidManifest.xml:31:13-37
+86            <meta-data
+86-->[com.google.firebase:firebase-storage:20.2.0] C:\Users\tenshi\.gradle\caches\transforms-3\867ac3c452700bc611ebc754905ad183\transformed\firebase-storage-20.2.0\AndroidManifest.xml:32:13-34:85
+87                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+87-->[com.google.firebase:firebase-storage:20.2.0] C:\Users\tenshi\.gradle\caches\transforms-3\867ac3c452700bc611ebc754905ad183\transformed\firebase-storage-20.2.0\AndroidManifest.xml:33:17-107
+88                android:value="com.google.firebase.components.ComponentRegistrar" />
+88-->[com.google.firebase:firebase-storage:20.2.0] C:\Users\tenshi\.gradle\caches\transforms-3\867ac3c452700bc611ebc754905ad183\transformed\firebase-storage-20.2.0\AndroidManifest.xml:34:17-82
+89        </service>
+90
+91        <provider
+91-->[com.google.firebase:firebase-common:20.3.2] C:\Users\tenshi\.gradle\caches\transforms-3\5cce5683de8eb199c6cfe65be0159d80\transformed\firebase-common-20.3.2\AndroidManifest.xml:25:9-30:39
+92            android:name="com.google.firebase.provider.FirebaseInitProvider"
+92-->[com.google.firebase:firebase-common:20.3.2] C:\Users\tenshi\.gradle\caches\transforms-3\5cce5683de8eb199c6cfe65be0159d80\transformed\firebase-common-20.3.2\AndroidManifest.xml:26:13-77
+93            android:authorities="com.example.uptechapp.firebaseinitprovider"
+93-->[com.google.firebase:firebase-common:20.3.2] C:\Users\tenshi\.gradle\caches\transforms-3\5cce5683de8eb199c6cfe65be0159d80\transformed\firebase-common-20.3.2\AndroidManifest.xml:27:13-72
+94            android:directBootAware="true"
+94-->[com.google.firebase:firebase-common:20.3.2] C:\Users\tenshi\.gradle\caches\transforms-3\5cce5683de8eb199c6cfe65be0159d80\transformed\firebase-common-20.3.2\AndroidManifest.xml:28:13-43
+95            android:exported="false"
+95-->[com.google.firebase:firebase-common:20.3.2] C:\Users\tenshi\.gradle\caches\transforms-3\5cce5683de8eb199c6cfe65be0159d80\transformed\firebase-common-20.3.2\AndroidManifest.xml:29:13-37
+96            android:initOrder="100" />
+96-->[com.google.firebase:firebase-common:20.3.2] C:\Users\tenshi\.gradle\caches\transforms-3\5cce5683de8eb199c6cfe65be0159d80\transformed\firebase-common-20.3.2\AndroidManifest.xml:30:13-36
+97
+98        <activity
+98-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\tenshi\.gradle\caches\transforms-3\10f2e9c048e004b0ea24d8924b27418a\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+99            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+99-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\tenshi\.gradle\caches\transforms-3\10f2e9c048e004b0ea24d8924b27418a\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+100            android:exported="false"
+100-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\tenshi\.gradle\caches\transforms-3\10f2e9c048e004b0ea24d8924b27418a\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+101            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+101-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\tenshi\.gradle\caches\transforms-3\10f2e9c048e004b0ea24d8924b27418a\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+102
+103        <meta-data
+103-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\tenshi\.gradle\caches\transforms-3\f05eeeee9cea9dc816a1052e8ef2a67d\transformed\play-services-basement-18.2.0\AndroidManifest.xml:21:9-23:69
+104            android:name="com.google.android.gms.version"
+104-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\tenshi\.gradle\caches\transforms-3\f05eeeee9cea9dc816a1052e8ef2a67d\transformed\play-services-basement-18.2.0\AndroidManifest.xml:22:13-58
+105            android:value="@integer/google_play_services_version" />
+105-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\tenshi\.gradle\caches\transforms-3\f05eeeee9cea9dc816a1052e8ef2a67d\transformed\play-services-basement-18.2.0\AndroidManifest.xml:23:13-66
+106
+107        <provider
+107-->[androidx.emoji2:emoji2:1.2.0] C:\Users\tenshi\.gradle\caches\transforms-3\c921a9c2b23da2fab8c5f551cb6f587e\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+108            android:name="androidx.startup.InitializationProvider"
+108-->[androidx.emoji2:emoji2:1.2.0] C:\Users\tenshi\.gradle\caches\transforms-3\c921a9c2b23da2fab8c5f551cb6f587e\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+109            android:authorities="com.example.uptechapp.androidx-startup"
+109-->[androidx.emoji2:emoji2:1.2.0] C:\Users\tenshi\.gradle\caches\transforms-3\c921a9c2b23da2fab8c5f551cb6f587e\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+110            android:exported="false" >
+110-->[androidx.emoji2:emoji2:1.2.0] C:\Users\tenshi\.gradle\caches\transforms-3\c921a9c2b23da2fab8c5f551cb6f587e\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+111            <meta-data
+111-->[androidx.emoji2:emoji2:1.2.0] C:\Users\tenshi\.gradle\caches\transforms-3\c921a9c2b23da2fab8c5f551cb6f587e\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+112                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+112-->[androidx.emoji2:emoji2:1.2.0] C:\Users\tenshi\.gradle\caches\transforms-3\c921a9c2b23da2fab8c5f551cb6f587e\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+113                android:value="androidx.startup" />
+113-->[androidx.emoji2:emoji2:1.2.0] C:\Users\tenshi\.gradle\caches\transforms-3\c921a9c2b23da2fab8c5f551cb6f587e\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+114            <meta-data
+114-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\tenshi\.gradle\caches\transforms-3\4693a733fc1099851f6631f3c9402d9e\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+115                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+115-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\tenshi\.gradle\caches\transforms-3\4693a733fc1099851f6631f3c9402d9e\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+116                android:value="androidx.startup" />
+116-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\tenshi\.gradle\caches\transforms-3\4693a733fc1099851f6631f3c9402d9e\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+117        </provider>
+118
+119        <uses-library
+119-->[androidx.window:window:1.0.0] C:\Users\tenshi\.gradle\caches\transforms-3\2d50a1810f55a5a1d4994048def33732\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+120            android:name="androidx.window.extensions"
+120-->[androidx.window:window:1.0.0] C:\Users\tenshi\.gradle\caches\transforms-3\2d50a1810f55a5a1d4994048def33732\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+121            android:required="false" />
+121-->[androidx.window:window:1.0.0] C:\Users\tenshi\.gradle\caches\transforms-3\2d50a1810f55a5a1d4994048def33732\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+122        <uses-library
+122-->[androidx.window:window:1.0.0] C:\Users\tenshi\.gradle\caches\transforms-3\2d50a1810f55a5a1d4994048def33732\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+123            android:name="androidx.window.sidecar"
+123-->[androidx.window:window:1.0.0] C:\Users\tenshi\.gradle\caches\transforms-3\2d50a1810f55a5a1d4994048def33732\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+124            android:required="false" />
+124-->[androidx.window:window:1.0.0] C:\Users\tenshi\.gradle\caches\transforms-3\2d50a1810f55a5a1d4994048def33732\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+125    </application>
+126
+127</manifest>

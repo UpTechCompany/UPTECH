@@ -1,0 +1,218 @@
+[
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/layout_fragment_login.xml.flat",
+        "source": "com.example.uptechapp-main-57:/layout/fragment_login.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/drawable_news_feed.xml.flat",
+        "source": "com.example.uptechapp-main-57:/drawable/news_feed.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/font_abbieshire.ttf.flat",
+        "source": "com.example.uptechapp-main-57:/font/abbieshire.ttf"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.uptechapp-main-57:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/drawable_gosuslugi.png.flat",
+        "source": "com.example.uptechapp-main-57:/drawable/gosuslugi.png"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.uptechapp-main-57:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/layout_activity_main_fragments.xml.flat",
+        "source": "com.example.uptechapp-main-57:/layout/activity_main_fragments.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/layout_bottom_navigation_view.xml.flat",
+        "source": "com.example.uptechapp-main-57:/layout/bottom_navigation_view.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/drawable_learn3_en.gif.flat",
+        "source": "com.example.uptechapp-main-57:/drawable/learn3_en.gif"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.uptechapp-main-57:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/layout_item_emergency.xml.flat",
+        "source": "com.example.uptechapp-main-57:/layout/item_emergency.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/layout_fragment_create_emergency.xml.flat",
+        "source": "com.example.uptechapp-main-57:/layout/fragment_create_emergency.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/drawable_learn1_en.gif.flat",
+        "source": "com.example.uptechapp-main-57:/drawable/learn1_en.gif"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.uptechapp-main-57:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.uptechapp-main-57:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/drawable_launch_logo.png.flat",
+        "source": "com.example.uptechapp-main-57:/drawable/launch_logo.png"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.uptechapp-main-57:/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/drawable_map.xml.flat",
+        "source": "com.example.uptechapp-main-57:/drawable/map.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/layout_learning.xml.flat",
+        "source": "com.example.uptechapp-main-57:/layout/learning.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.uptechapp-main-57:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.uptechapp-main-57:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.uptechapp-main-57:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.uptechapp-main-57:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/mipmap-anydpi-v33_ic_launcher.xml.flat",
+        "source": "com.example.uptechapp-main-57:/mipmap-anydpi-v33/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/drawable_fill.png.flat",
+        "source": "com.example.uptechapp-main-57:/drawable/fill.png"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/drawable_ugli.xml.flat",
+        "source": "com.example.uptechapp-main-57:/drawable/ugli.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/drawable_gradient_background.xml.flat",
+        "source": "com.example.uptechapp-main-57:/drawable/gradient_background.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.uptechapp-main-57:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/layout_fragment_splash.xml.flat",
+        "source": "com.example.uptechapp-main-57:/layout/fragment_splash.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/drawable_img_logo.png.flat",
+        "source": "com.example.uptechapp-main-57:/drawable/img_logo.png"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/drawable_ellipse.xml.flat",
+        "source": "com.example.uptechapp-main-57:/drawable/ellipse.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/layout_dialog_layout.xml.flat",
+        "source": "com.example.uptechapp-main-57:/layout/dialog_layout.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/drawable_rounded_rectangle.xml.flat",
+        "source": "com.example.uptechapp-main-57:/drawable/rounded_rectangle.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/drawable_ic_google_logo.xml.flat",
+        "source": "com.example.uptechapp-main-57:/drawable/ic_google_logo.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/drawable_learn2_en.gif.flat",
+        "source": "com.example.uptechapp-main-57:/drawable/learn2_en.gif"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/navigation_nav_graph.xml.flat",
+        "source": "com.example.uptechapp-main-57:/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/xml_backup_rules.xml.flat",
+        "source": "com.example.uptechapp-main-57:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.uptechapp-main-57:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.uptechapp-main-57:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/drawable_learn3_ru.gif.flat",
+        "source": "com.example.uptechapp-main-57:/drawable/learn3_ru.gif"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/drawable_create_news.xml.flat",
+        "source": "com.example.uptechapp-main-57:/drawable/create_news.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/drawable_learn2_ru.gif.flat",
+        "source": "com.example.uptechapp-main-57:/drawable/learn2_ru.gif"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/menu_bottom_menu.xml.flat",
+        "source": "com.example.uptechapp-main-57:/menu/bottom_menu.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/drawable_emergency_item_background.xml.flat",
+        "source": "com.example.uptechapp-main-57:/drawable/emergency_item_background.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.uptechapp-main-57:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/layout_fragment_emergency_feed.xml.flat",
+        "source": "com.example.uptechapp-main-57:/layout/fragment_emergency_feed.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/drawable_ic_label.xml.flat",
+        "source": "com.example.uptechapp-main-57:/drawable/ic_label.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/layout_lea.xml.flat",
+        "source": "com.example.uptechapp-main-57:/layout/lea.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/layout_dialog_fragment.xml.flat",
+        "source": "com.example.uptechapp-main-57:/layout/dialog_fragment.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/drawable_round_view.xml.flat",
+        "source": "com.example.uptechapp-main-57:/drawable/round_view.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.uptechapp-main-57:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/drawable_learn1_ru.gif.flat",
+        "source": "com.example.uptechapp-main-57:/drawable/learn1_ru.gif"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/drawable_round_corner_btn.xml.flat",
+        "source": "com.example.uptechapp-main-57:/drawable/round_corner_btn.xml"
+    },
+    {
+        "merged": "com.example.uptechapp-merged_res-56:/layout_fragment_map.xml.flat",
+        "source": "com.example.uptechapp-main-57:/layout/fragment_map.xml"
+    }
+]
